@@ -50,6 +50,9 @@ public:
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
         const Board& board) const override {
+        if(!(end.x == start.x + 1)){
+            return 0;
+        }
         return SUCCESS;
     }
 };

@@ -1,3 +1,9 @@
+commit 14ac0e11633b3ed2ff0d8bfe63939e27948f0183
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri Apr 28 13:26:45 2017 -0400
+
+    gitlogged
+
 commit 043e3810d20ca8e19f6b503033d01a86fe77759c
 Author: Jason Zhang <jz1242@gmail.com>
 Date:   Fri Apr 28 13:26:14 2017 -0400

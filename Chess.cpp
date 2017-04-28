@@ -13,7 +13,21 @@ int ChessGame::makeMove(Position start, Position end) {
     //
     // We call Board's makeMove to handle any general move logic
     // Feel free to use this or change it as you see fit
-    int retCode = Board::makeMove(start, end);
+    int retCode = -1;
+    Piece* a = getPiece(start);
+
+    if(!(a == nullptr)){
+        if(a->validMove(start, end, *this)){
+            retCode = Board::makeMove(start, end);
+        }
+        else{
+            std::cout<<"Illegal Move"<<std::endl;
+        }
+    }
+    else{
+        std::cout<<"Illegal Move"<<std::endl;
+    }
+
     return retCode;
 }
 
@@ -56,6 +70,8 @@ int main() {
     q[0] = 0;
     q[1] = 0;
         printf("%u", q[0]);*/
+    printAllPieces(&chess);
+    chess.makeMove(Position(1, 1), Position(3, 1));
     printAllPieces(&chess);
 
 }

@@ -73,6 +73,10 @@ public:
     virtual int makeMove(Position start, Position end) {
         // This method may handle the parts of moving pieces that
         // generalize over different board games
+        Piece* temp = m_pieces[index(start)];
+        m_pieces[index(end)] = temp;
+        m_pieces[index(start)] = nullptr;
+
         return 0;
     }
 
@@ -157,6 +161,7 @@ public:
            const Board& board) const {
         // This particular method may include generic logic to check
         // for a valid move. 
+
         return 0;
     }
 
