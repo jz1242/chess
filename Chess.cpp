@@ -24,14 +24,38 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
-        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
-        initPiece(pieces[i], WHITE, Position(i, 0));
-        initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        initPiece(PAWN_ENUM, WHITE, Position(1, i));
+        initPiece(pieces[i], WHITE, Position(0, i));
+        initPiece(pieces[i], BLACK, Position(7, i));
+        initPiece(PAWN_ENUM, BLACK, Position(6, i));
+    }
+}
+
+void printAllPieces(ChessGame* chess){
+    //std::cout<<i<<" "<<j<<std::endl;
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            Piece* a = chess->getPiece(Position(i, j));
+            if(!(a == nullptr)){
+                std::cout<<a->id()<<" ";
+            }
+            else{
+                std::cout<<"e ";
+            }
+
+        }
+        std::cout<<std::endl;
     }
 }
 
 int main() {
     ChessGame chess;
-    chess.run();
+    //chess.run();
+    chess.setupBoard();
+  /*  std::vector<int> q;
+    q[0] = 0;
+    q[1] = 0;
+        printf("%u", q[0]);*/
+    printAllPieces(&chess);
+
 }
