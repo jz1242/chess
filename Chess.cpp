@@ -15,13 +15,16 @@ int ChessGame::makeMove(Position start, Position end) {
     // Feel free to use this or change it as you see fit
     int retCode = -1;
     Piece* a = getPiece(start);
-
-    if(!(a == nullptr)){
+    
+    if(!Board::validPosition(end) || Board::getPiece(end) != nullptr) {
+        std::cout<<" hereIllegal Move"<<std::endl;
+    }
+    else if(!(a == nullptr)){
         if(a->validMove(start, end, *this)){
             retCode = Board::makeMove(start, end);
         }
         else{
-            std::cout<<"Illegal Move"<<std::endl;
+            std::cout<<" here Illegal Move"<<std::endl;
         }
     }
     else{
@@ -71,7 +74,11 @@ int main() {
     q[1] = 0;
         printf("%u", q[0]);*/
     printAllPieces(&chess);
-    chess.makeMove(Position(1, 1), Position(3, 1));
+    std::cout << std::endl;
+    chess.makeMove(Position(1, 4), Position(2, 4));
+    printAllPieces(&chess);
+    std::cout << std::endl;
+    chess.makeMove(Position(0, 4), Position(1, 4));
     printAllPieces(&chess);
 
 }

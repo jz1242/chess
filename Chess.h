@@ -50,7 +50,7 @@ public:
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
         const Board& board) const override {
-        if(!(end.x == start.x + 1)){
+        if(!(end.x == start.x + 1 && end.y == start.y)){
             return 0;
         }
         return SUCCESS;
@@ -104,7 +104,16 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { return SUCCESS; }
+        const Board& board) const override { 
+            if(!(
+                !(end.x == start.x && end.y == start.y) &&
+                (end.x == start.x + 1 || end.x == start.x - 1 || end.x == start.x) &&
+                (end.y == start.y + 1 || end.y == start.y - 1 || end.y == start.y)
+                )){
+                return 0;
+            }
+            return SUCCESS; 
+        }
 };
 
 class ChessGame : public Board {
