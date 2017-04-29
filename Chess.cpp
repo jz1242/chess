@@ -72,16 +72,20 @@ int main() {
     ChessGame chess;
     //chess.run();
     chess.setupBoard();
-  /*  std::vector<int> q;
-    q[0] = 0;
-    q[1] = 0;
-        printf("%u", q[0]);*/
+  
     printAllPieces(&chess);
-    std::cout << std::endl;
+ /* std::cout << std::endl; //TEST KING
     chess.makeMove(Position(1, 4), Position(2, 4));
     printAllPieces(&chess);
     std::cout << std::endl;
     chess.makeMove(Position(0, 4), Position(1, 4));
+    printAllPieces(&chess);
+ */
+    std::cout << std::endl;
+    chess.makeMove(Position(1, 3), Position(2, 3));
+    printAllPieces(&chess);
+    std::cout << std::endl;
+    chess.makeMove(Position(0, 1), Position(1, 3));
     printAllPieces(&chess);
 
 }
