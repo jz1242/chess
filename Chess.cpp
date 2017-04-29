@@ -16,19 +16,22 @@ int ChessGame::makeMove(Position start, Position end) {
     int retCode = -1;
     Piece* a = getPiece(start);
     
-    if(!Board::validPosition(end) || Board::getPiece(end) != nullptr) {
-        std::cout<<" hereIllegal Move"<<std::endl;
+    if(!Board::validPosition(end)) {
+        Prompts::outOfBounds();
+    }
+    else if (Board::getPiece(end) != nullptr) {
+        Prompts::blocked();
     }
     else if(!(a == nullptr)){
         if(a->validMove(start, end, *this)){
             retCode = Board::makeMove(start, end);
         }
         else{
-            std::cout<<" here Illegal Move"<<std::endl;
+            Prompts::illegalMove();
         }
     }
     else{
-        std::cout<<"Illegal Move"<<std::endl;
+        Prompts::parseError();
     }
 
     return retCode;
