@@ -37,6 +37,40 @@ int ChessGame::makeMove(Position start, Position end) {
     return retCode;
 }
 
+//Valid move functions
+int Pawn::validMove(Position start, Position end,
+    const Board& board) const {
+    if(!(end.x == start.x + 1 && end.y == start.y)){
+        return 0;
+    }
+    return SUCCESS;
+}
+
+int Knight::validMove(Position start, Position end,
+    const Board& board) const { 
+    if(!(
+        (end.x == start.x + 2 && (end.y == start.y + 1 || end.y == start.y - 1)) ||
+        (end.x == start.x - 2 && (end.y == start.y + 1 || end.y == start.y - 1)) || 
+        (end.x == start.x + 1 && (end.y == start.y + 2 || end.y == start.y - 2)) || 
+        (end.x == start.x - 1 && (end.y == start.y + 2 || end.y == start.y - 2))     
+        )){
+        return 0;
+    }
+    return SUCCESS; 
+}
+
+int King::validMove(Position start, Position end,
+    const Board& board) const { 
+    if(!(
+        !(end.x == start.x && end.y == start.y) &&
+        (end.x == start.x + 1 || end.x == start.x - 1 || end.x == start.x) &&
+        (end.y == start.y + 1 || end.y == start.y - 1 || end.y == start.y)
+        )){
+        return 0;
+    }
+    return SUCCESS; 
+}
+
 // Setup the chess board with its initial pieces
 void ChessGame::setupBoard() {
     std::vector<int> pieces {

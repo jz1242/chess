@@ -49,12 +49,7 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override {
-        if(!(end.x == start.x + 1 && end.y == start.y)){
-            return 0;
-        }
-        return SUCCESS;
-    }
+        const Board& board) const override;
 };
 class Rook : public Piece {
 protected:
@@ -74,17 +69,7 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { 
-        if(!(
-            (end.x == start.x + 2 && (end.y == start.y + 1 || end.y == start.y - 1)) ||
-            (end.x == start.x - 2 && (end.y == start.y + 1 || end.y == start.y - 1)) || 
-            (end.x == start.x + 1 && (end.y == start.y + 2 || end.y == start.y - 2)) || 
-            (end.x == start.x - 1 && (end.y == start.y + 2 || end.y == start.y - 2))     
-            )){
-            return 0;
-        }
-        return SUCCESS; 
-    }
+        const Board& board) const override;
 };
 class Bishop : public Piece {
 protected:
@@ -114,16 +99,7 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { 
-            if(!(
-                !(end.x == start.x && end.y == start.y) &&
-                (end.x == start.x + 1 || end.x == start.x - 1 || end.x == start.x) &&
-                (end.y == start.y + 1 || end.y == start.y - 1 || end.y == start.y)
-                )){
-                return 0;
-            }
-            return SUCCESS; 
-        }
+        const Board& board) const override;
 };
 
 class ChessGame : public Board {
