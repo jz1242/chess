@@ -45,7 +45,13 @@ int Pawn::validMove(Position start, Position end,
     }
     return SUCCESS;
 }
-
+int Rook::validMove(Position start, Position end,
+        const Board& board) const{ 
+    if(!board.ChessGame::checkRow(start, end)){
+        return 0;
+    }
+    return SUCCESS;
+}
 int Knight::validMove(Position start, Position end,
     const Board& board) const { 
     if(!(
@@ -96,7 +102,6 @@ void printAllPieces(ChessGame* chess){
             else{
                 std::cout<<"e ";
             }
-
         }
         std::cout<<std::endl;
     }
@@ -116,10 +121,16 @@ int main() {
     printAllPieces(&chess);
  */
     std::cout << std::endl;
-    chess.makeMove(Position(1, 3), Position(2, 3));
+    chess.makeMove(Position(0, 1), Position(2, 2));
     printAllPieces(&chess);
+    
     std::cout << std::endl;
-    chess.makeMove(Position(0, 1), Position(1, 3));
+    chess.makeMove(Position(0, 0), Position(0, 1));
     printAllPieces(&chess);
+
+    std::cout << std::endl;
+    chess.makeMove(Position(0, 1), Position(0, 0));
+    printAllPieces(&chess);
+
 
 }

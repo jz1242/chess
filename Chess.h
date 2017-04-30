@@ -59,7 +59,7 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { return SUCCESS; }
+        const Board& board) const override;
 };
 class Knight : public Piece {
 protected:
@@ -124,6 +124,7 @@ public:
     // The method returns an integer with the status
     // >= 0 is SUCCESS, < 0 is failure
     virtual int makeMove(Position start, Position end) override;
+
 };
 
 #endif
