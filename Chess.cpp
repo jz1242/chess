@@ -19,7 +19,10 @@ int ChessGame::makeMove(Position start, Position end) {
     if(!Board::validPosition(end)) {
         Prompts::outOfBounds();
     }
-    else if (Board::getPiece(end) != nullptr) {
+    if(a->owner() != Board::playerTurn()){
+        Prompts::noPiece();
+    }
+    else if (Board::getPiece(end) != nullptr && Board::playerTurn() == Board::getPiece(end)->owner()) {
         Prompts::blocked();
     }
     else if(!(a == nullptr)){
@@ -44,6 +47,16 @@ int Pawn::validMove(Position start, Position end,
         return 0;
     }
     return SUCCESS;
+}
+
+bool checkRow(Position start, Position end){
+    if(!(start.x == end.x)){
+        return false;
+    }
+    else{
+
+    }
+    return true;
 }
 
 int Knight::validMove(Position start, Position end,
@@ -79,7 +92,7 @@ void ChessGame::setupBoard() {
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
         initPiece(PAWN_ENUM, WHITE, Position(1, i));
-        initPiece(pieces[i], WHITE, Position(0, i));
+        initPiece(pieces[i], BLACK, Position(0, i));
         initPiece(pieces[i], BLACK, Position(7, i));
         initPiece(PAWN_ENUM, BLACK, Position(6, i));
     }
@@ -115,11 +128,13 @@ int main() {
     chess.makeMove(Position(0, 4), Position(1, 4));
     printAllPieces(&chess);
  */
-    std::cout << std::endl;
-    chess.makeMove(Position(1, 3), Position(2, 3));
+    std::cout <<chess.turn()<< std::endl;
+    //chess.makeMove(Position(1, 3), Position(2, 3));
     printAllPieces(&chess);
     std::cout << std::endl;
+    std::cout <<chess.turn()<< std::endl;
     chess.makeMove(Position(0, 1), Position(1, 3));
     printAllPieces(&chess);
+    std::cout <<chess.turn()<< std::endl;
 
 }

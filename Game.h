@@ -76,7 +76,7 @@ public:
         Piece* temp = m_pieces[index(start)];
         m_pieces[index(end)] = temp;
         m_pieces[index(start)] = nullptr;
-
+        m_turn++;
         return 0;
     }
 
