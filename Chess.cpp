@@ -26,6 +26,7 @@ int ChessGame::makeMove(Position start, Position end) {
         Prompts::blocked();
     }
     else if(!(a == nullptr)){
+        std::cout << "he" << std::endl;
         if(a->validMove(start, end, *this)){
             retCode = Board::makeMove(start, end);
         }
@@ -114,11 +115,31 @@ int Bishop::validMove(Position start, Position end,
 
 int Queen::validMove(Position start, Position end,
         const Board& board) const { 
+    std::cout << "here" << std::endl;
     if(checkMoveDia(start, end)){
+        std::cout << "here dia" << std::endl;
         if(!board.Board::checkValidDia(start, end)){
+            
             return 0;
         }
     }
+    else if(checkMoveRow(start, end)) {
+        std::cout << "here row " << std::endl;
+        if (!board.Board::checkValidRow(start, end)) {
+            return 0;
+        }
+    } 
+    else if (checkMoveCol(start, end)) {
+        std::cout << "here col" << std::endl;
+        if(!board.Board::checkValidCol(start, end)) {
+            return 0;
+        }   
+    }
+    else{
+        std::cout << "here end" << std::endl;
+        return 0;
+    }
+    std::cout << "here" << std::endl;
     return SUCCESS; 
 }
 
@@ -171,28 +192,34 @@ int main() {
   
     printAllPieces(&chess);
     std::cout << std::endl;
-    
-    chess.makeMove(Position(2, 0), Position(4, 2));
+
+    chess.makeMove(Position(4, 0), Position(2, 2));
     printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
 
     chess.makeMove(Position(3, 1), Position(3, 2));
     printAllPieces(&chess);
-    //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
 
-    chess.makeMove(Position(2, 0), Position(4, 2));
+    chess.makeMove(Position(4, 0), Position(2, 2));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;
+/*
+    chess.makeMove(Position(2, 2), Position(2, 5));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
 
-    chess.makeMove(Position(4,2), Position(2,4));
+    chess.makeMove(Position(2,5), Position(1,4));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
 
-    chess.makeMove(Position(2,4), Position(3,3));
+    chess.makeMove(Position(1,4), Position(2,3));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
+*/
 }
