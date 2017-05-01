@@ -67,8 +67,70 @@ bool checkMoveDia(Position start, Position end){
 //Valid move functions
 int Pawn::validMove(Position start, Position end,
     const Board& board) const {
-    if(!(end.y == start.y + 1 && end.x == start.x)){
-        return 0;
+    if(board.Board::getPiece(start)->owner() == WHITE){
+        if(end.x == start.x && end.y == start.y + 2 && start.y == 1){
+                if(board.Board::getPiece(end) != nullptr){
+                    return 0;
+                }
+                if(!(board.Board::checkValidRow(start, end))){
+                    return 0;
+                }
+            }
+            else if(end.x == start.x && end.y == start.y + 1){
+
+                if(board.Board::getPiece(end) != nullptr){
+
+                    return 0;
+                }
+                if(!(board.Board::checkValidRow(start, end))){
+
+                    return 0;
+                }
+            }
+            else if(end.x == start.x + 1 && end.y == start.y + 1){
+                if(board.Board::getPiece(end) == nullptr){
+                    return 0;
+                }
+            }
+            else if(end.x == start.x - 1 && end.y == start.y + 1){
+                if(board.Board::getPiece(end) == nullptr){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
+    }
+    else{
+        if(end.x == start.x && end.y == start.y - 2 && start.y == 6){
+                if(board.Board::getPiece(end) != nullptr){
+                    return 0;
+                }
+                if(!(board.Board::checkValidRow(start, end))){
+                    return 0;
+                }
+            }
+            else if(end.x == start.x && end.y == start.y - 1){
+                if(board.Board::getPiece(end) != nullptr){
+                    return 0;
+                }
+                if(!(board.Board::checkValidRow(start, end))){
+                    return 0;
+                }
+            }
+            else if(end.x == start.x + 1 && end.y == start.y - 1){
+                if(board.Board::getPiece(end) == nullptr){
+                    return 0;
+                }
+            }
+            else if(end.x == start.x - 1 && end.y == start.y - 1){
+                if(board.Board::getPiece(end) == nullptr){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
     }
     return SUCCESS;
 }
@@ -185,8 +247,20 @@ int main() {
   
     printAllPieces(&chess);
     std::cout << std::endl;
+    chess.makeMove(Position(0,1), Position (0, 3));
 
-    chess.makeMove(Position(3, 0), Position(2, 2));
+    printAllPieces(&chess);
+    std::cout << std::endl;
+    chess.makeMove(Position(0,6), Position (0, 5));
+
+    printAllPieces(&chess);
+    std::cout << std::endl;
+    chess.makeMove(Position(0,3), Position (0, 2));
+    printAllPieces(&chess);
+    std::cout << std::endl;
+    //chess.makeMove(Position(0,1), Position (0, 3));
+
+/*    chess.makeMove(Position(3, 0), Position(2, 2));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
@@ -214,4 +288,8 @@ int main() {
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
+    chess.makeMove(Position(2,3), Position(3,2));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;*/
 }
