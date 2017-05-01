@@ -86,14 +86,14 @@ int Board::checkValidRow(Position start, Position end) const {
     if(moveToRight) {
         for(unsigned int i = start.y+1; i < end.y; i++){
 
-            if(Board::getPiece(Position(start.y, i)) != nullptr){
+            if(Board::getPiece(Position(start.x, i)) != nullptr){
                 return 0;
             }
         }
     }
     else {
         for(unsigned int i = end.y+1; i < start.y; i++){
-            if(Board::getPiece(Position(start.y, i)) != nullptr){
+            if(Board::getPiece(Position(start.x, i)) != nullptr){
                 return 0;
             }
         }
@@ -115,14 +115,13 @@ int Board::checkValidCol(Position start, Position end) const {
     }
     else {
         for(unsigned int i = end.x+1; i < start.x; i++){
-            if(Board::getPiece(Position(i, start.x)) != nullptr){
+            if(Board::getPiece(Position(i, start.y)) != nullptr){
                 return 0;
             }
         }
     }
     return 1;
 }
-
 int Board::checkValidDia(Position start, Position end) const {
     int right = 0;
     if(start.x < end.x){
@@ -161,4 +160,19 @@ int Board::checkValidDia(Position start, Position end) const {
         }
     }
     return 1;
+}
+void Board::printAllPieces() const{
+    //std::cout<<i<<" "<<j<<std::endl;
+    for(int i = 7; i >= 0; i--){
+        for(int j = 0; j <= 7; j++){
+            Piece* a = Board::getPiece(Position(j, i));
+            if(!(a == nullptr)){
+                std::cout<<a->id()<<" ";
+            }
+            else{
+                std::cout<<"e ";
+            }
+        }
+        std::cout<<std::endl;
+    }
 }

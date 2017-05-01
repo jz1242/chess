@@ -83,7 +83,23 @@ public:
     // The main gameplay loop. Ideally, you should be able to implement
     // all of the gameplay loop logic here in the Board class rather than
     // overriding this method in the specialized Game-specific class
-    virtual void run() {}
+    virtual void run() {
+        while(1){
+        std::string start;
+        std::string end;
+        std::cin >> start;
+        std::cin >> end;
+       // std::cout << (int)start.at(0) <<std::endl;
+
+            int indXStart = start.at(0) - 97;
+            int indYStart = start.at(1) - 49;
+            int indXEnd = end.at(0) - 97;
+            int indYEnd = end.at(1) - 49;
+            makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
+            //makeMove(Position(3,1), Position (3, 2));
+            printAllPieces();
+        }
+    }
 
     // Returns "true" if the game is over
     virtual bool gameOver() const = 0 ;
@@ -91,6 +107,7 @@ public:
     int checkValidRow(Position start, Position end) const;
     int checkValidCol(Position start, Position end) const;
     int checkValidDia(Position start, Position end) const;
+    void printAllPieces()const;
 
 protected:
     // All the factories registered with this Board

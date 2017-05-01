@@ -15,7 +15,6 @@ int ChessGame::makeMove(Position start, Position end) {
     // Feel free to use this or change it as you see fit
     int retCode = -1;
     Piece* a = getPiece(start);
-    
     if(!Board::validPosition(end)) {
         Prompts::outOfBounds();
     }
@@ -138,12 +137,12 @@ int Pawn::validMove(Position start, Position end,
 int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
     if(checkMoveRow(start, end)) {
-        if (!board.Board::checkValidRow(start, end)) {
+        if (!(board.Board::checkValidRow(start, end))) {
             return 0;
         }
     } 
     else if (checkMoveCol(start, end)) {
-        if(!board.Board::checkValidCol(start, end)) {
+        if(!(board.Board::checkValidCol(start, end))) {
             return 0;
         }   
     }
@@ -224,38 +223,20 @@ void ChessGame::setupBoard() {
     }
 }
 
-void printAllPieces(ChessGame* chess){
-    //std::cout<<i<<" "<<j<<std::endl;
-    for(int i = 7; i >= 0; i--){
-        for(int j = 0; j <= 7; j++){
-            Piece* a = chess->getPiece(Position(i, j));
-            if(!(a == nullptr)){
-                std::cout<<a->id()<<" ";
-            }
-            else{
-                std::cout<<"e ";
-            }
-        }
-        std::cout<<std::endl;
-    }
-}
-
 int main() {
     ChessGame chess;
-    //chess.run();
     chess.setupBoard();
-  
-    printAllPieces(&chess);
+    chess.run();
+
+  /*  printAllPieces(&chess);
     std::cout << std::endl;
     chess.makeMove(Position(0,1), Position (0, 3));
 
     printAllPieces(&chess);
     std::cout << std::endl;
-    chess.makeMove(Position(0,6), Position (0, 5));
 
-    printAllPieces(&chess);
-    std::cout << std::endl;
-    chess.makeMove(Position(0,3), Position (0, 2));
+    chess.makeMove(Position(0,0), Position (0, 2));
+
     printAllPieces(&chess);
     std::cout << std::endl;
     //chess.makeMove(Position(0,1), Position (0, 3));
