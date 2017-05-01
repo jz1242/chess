@@ -122,3 +122,43 @@ int Board::checkValidCol(Position start, Position end) const {
     }
     return 1;
 }
+
+int Board::checkValidDia(Position start, Position end) const {
+    int right = 0;
+    if(start.x < end.x){
+        right = 1;
+    }
+    int up = 0;
+    if(start.y < end.y){
+        up = 1;
+    }
+    if(right && up){
+        for(unsigned int i = 1; i < (end.x - start.x); i++){
+            if(Board::getPiece(Position(start.x + i, start.y + i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    else if(right){
+        for(unsigned int i = 1; i < (end.x - start.x); i++){
+            if(Board::getPiece(Position(start.x + i, start.y - i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    else if(up){
+        for(unsigned int i = 1; i < (end.x - start.x); i++){
+            if(Board::getPiece(Position(start.x - i, start.y + i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    else{
+        for(unsigned int i = 1; i < (end.x - start.x); i++){
+            if(Board::getPiece(Position(start.x - i, start.y - i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
