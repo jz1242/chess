@@ -78,3 +78,27 @@ Piece* Board::newPiece(int id, Player owner) {
     }
 }
 
+int Board::checkRow(Position start, Position end) const {
+    if(start.x != end.x){
+       return 0; 
+    }
+    int moveToRight = 0;
+    if(start.y < end.y){
+        moveToRight  = 1;
+    }
+    if(moveToRight) {
+        for(unsigned int i = start.y+1; i < end.y; i++){
+            if(Board::getPiece(Position(start.x, i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    else {
+        for(unsigned int i = end.y+1; i < start.y; i++){
+            if(Board::getPiece(Position(start.x, i)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
