@@ -40,6 +40,13 @@ int ChessGame::makeMove(Position start, Position end) {
     return retCode;
 }
 
+bool checkMoveRow(Position start, Position end){
+    if(start.x != end.x){
+        return false;
+    }
+    return true;
+}
+
 //Valid move functions
 int Pawn::validMove(Position start, Position end,
     const Board& board) const {
@@ -48,27 +55,15 @@ int Pawn::validMove(Position start, Position end,
     }
     return SUCCESS;
 }
-<<<<<<< HEAD
+
 int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
-    if(!board.ChessGame::checkRow(start, end)){
+    if(!(checkMoveRow(start, end) && board.Board::checkValidRow(start, end))){
         return 0;
     }
     return SUCCESS;
 }
-=======
 
-bool checkRow(Position start, Position end){
-    if(!(start.x == end.x)){
-        return false;
-    }
-    else{
-
-    }
-    return true;
-}
-
->>>>>>> 1a9d1f6bf84cf6831255271ab7744227f8b1697d
 int Knight::validMove(Position start, Position end,
     const Board& board) const { 
     if(!(
@@ -131,30 +126,10 @@ int main() {
   
     printAllPieces(&chess);
     std::cout << std::endl; //TEST KING
-    chess.makeMove(Position(4, 1), Position(4, 2));
+    chess.makeMove(Position(0, 1), Position(0, 2));
     printAllPieces(&chess);
     std::cout << std::endl;
-    chess.makeMove(Position(4, 0), Position(4, 1));
+    chess.makeMove(Position(0, 0), Position(0, 2));
     printAllPieces(&chess);
-<<<<<<< HEAD
-
-   /* std::cout <<chess.turn()<< std::endl;
-    chess.makeMove(Position(1, 1), Position(1, 2));
-=======
- */
->>>>>>> 4f426a681b67d8ef06a76b58a55cafda903c2402
-    printAllPieces(&chess);
-    std::cout <<chess.turn()<< std::endl;
-<<<<<<< HEAD
-    chess.makeMove(Position(1, 0), Position(0, 2));
-    printAllPieces(&chess);
-    std::cout <<chess.turn()<< std::endl;*/
-=======
-
-    std::cout << std::endl;
-    chess.makeMove(Position(0, 1), Position(0, 0));
-    printAllPieces(&chess);
-
->>>>>>> 4f426a681b67d8ef06a76b58a55cafda903c2402
 
 }
