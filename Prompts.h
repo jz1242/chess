@@ -85,7 +85,6 @@ public:
         std::cout << "Error: you cannot expose your king to a check.\n";
     }
 
-
     static void illegalMove() {
         std::cout << "Error: illegal move.\n";
     }

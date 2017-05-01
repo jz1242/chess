@@ -51,6 +51,7 @@ public:
     int validMove(Position start, Position end,
         const Board& board) const override;
 };
+
 class Rook : public Piece {
 protected:
     friend PieceFactory<Rook>;
@@ -61,6 +62,7 @@ public:
     int validMove(Position start, Position end,
         const Board& board) const override;
 };
+
 class Knight : public Piece {
 protected:
     friend PieceFactory<Knight>;
@@ -71,6 +73,7 @@ public:
     int validMove(Position start, Position end,
         const Board& board) const override;
 };
+
 class Bishop : public Piece {
 protected:
     friend PieceFactory<Bishop>;
@@ -79,8 +82,9 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { return SUCCESS; }
+        const Board& board) const override;
 };
+
 class Queen : public Piece {
 protected:
     friend PieceFactory<Queen>;
@@ -89,8 +93,9 @@ public:
     // This method will have piece-specific logic for checking valid moves
     // It may also call the generic Piece::validMove for common logic
     int validMove(Position start, Position end,
-        const Board& board) const override { return SUCCESS; }
+        const Board& board) const override;
 };
+
 class King : public Piece {
 protected:
     friend PieceFactory<King>;

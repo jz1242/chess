@@ -88,7 +88,9 @@ public:
     // Returns "true" if the game is over
     virtual bool gameOver() const = 0 ;
 
-    int checkRow(Position start, Position end) const;
+    int checkValidRow(Position start, Position end) const;
+    int checkValidCol(Position start, Position end) const;
+    int checkValidDia(Position start, Position end) const;
 
 protected:
     // All the factories registered with this Board
