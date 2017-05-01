@@ -114,9 +114,7 @@ int Bishop::validMove(Position start, Position end,
 
 int Queen::validMove(Position start, Position end,
         const Board& board) const { 
-    std::cout << "here" << std::endl;
     if(checkMoveDia(start, end)){
-        std::cout << "here dia" << std::endl;
         if(!board.Board::checkValidDia(start, end)){
             
             return 0;
