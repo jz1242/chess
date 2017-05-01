@@ -1,0 +1,18 @@
+way that board is printed now
+		x
+	 0 1 2 3 4 5 6 7
+	7 
+	6
+	5
+y	4
+	3
+	2
+	1
+	0
+right side is white
+
+to integrate turns again go to game.h -> virtual int makeMove() -> uncomment m_turn++;
+
+Position is defined as Position(x,y). However, to properly index on the gameboard
+the y is the rows and x is the columns IE if you want to get the piece in the 
+second column, fourth row the position is "Position(4,2)"
