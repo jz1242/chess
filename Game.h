@@ -90,6 +90,8 @@ public:
 
     int checkValidRow(Position start, Position end) const;
 
+    int checkValidCol(Position start, Position end) const;
+
 protected:
     // All the factories registered with this Board
     PieceGenMap m_registeredFactories;

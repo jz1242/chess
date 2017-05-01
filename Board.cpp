@@ -100,3 +100,25 @@ int Board::checkValidRow(Position start, Position end) const {
     }
     return 1;
 }
+
+int Board::checkValidCol(Position start, Position end) const {
+    int moveUp = 0;
+    if(start.x < end.x){
+        moveUp = 1;
+    }
+    if(moveUp) {
+        for(unsigned int i = start.x+1; i < end.x; i++){
+            if(Board::getPiece(Position(i, start.y)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    else {
+        for(unsigned int i = end.x+1; i < start.x; i++){
+            if(Board::getPiece(Position(i, start.x)) != nullptr){
+                return 0;
+            }
+        }
+    }
+    return 1;
+}

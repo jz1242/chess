@@ -48,6 +48,13 @@ bool checkMoveRow(Position start, Position end){
     return true;
 }
 
+bool checkMoveCol(Position start, Position end){
+    if(start.y != end.y){
+        return false;
+    }
+    return true;
+}
+
 //Valid move functions
 int Pawn::validMove(Position start, Position end,
     const Board& board) const {
@@ -59,7 +66,17 @@ int Pawn::validMove(Position start, Position end,
 
 int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
-    if(!(checkMoveRow(start, end) && board.Board::checkValidRow(start, end))){
+    if(checkMoveRow(start, end)) {
+        if (!board.Board::checkValidRow(start, end)) {
+            return 0;
+        }
+    } 
+    else if (checkMoveCol(start, end)) {
+        if(!board.Board::checkValidCol(start, end)) {
+            return 0;
+        }   
+    }
+    else {
         return 0;
     }
     return SUCCESS;
