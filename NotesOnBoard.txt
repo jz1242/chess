@@ -5,11 +5,11 @@ way that board is printed now
 	6
 	5
 y	4
-	3
+	3  
 	2
 	1
-	0
-right side is white
+	0 
+left side is white
 
 to integrate turns again go to game.h -> virtual int makeMove() -> uncomment m_turn++;
 
