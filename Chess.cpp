@@ -56,9 +56,9 @@ bool checkMoveCol(Position start, Position end){
 }
 
 bool checkMoveDia(Position start, Position end){
-    int checkX = start.x - end.x;
-    int checkY = start.y - end.y;
-    if(checkY == checkX) {
+    int checkX = (int)start.x - (int)end.x;
+    int checkY = (int)start.y - (int)end.y;
+    if(abs(checkY) == abs(checkX)) {
         return true;
     }
     return false;
@@ -112,6 +112,16 @@ int Bishop::validMove(Position start, Position end,
     return SUCCESS; 
 }
 
+int Queen::validMove(Position start, Position end,
+        const Board& board) const { 
+    if(checkMoveDia(start, end)){
+        if(!board.Board::checkValidDia(start, end)){
+            return 0;
+        }
+    }
+    return SUCCESS; 
+}
+
 int King::validMove(Position start, Position end,
     const Board& board) const { 
     if(!(
@@ -123,7 +133,6 @@ int King::validMove(Position start, Position end,
     }
     return SUCCESS; 
 }
-
 
 // Setup the chess board with its initial pieces
 void ChessGame::setupBoard() {
@@ -173,6 +182,16 @@ int main() {
     std::cout << std::endl;
 
     chess.makeMove(Position(2, 0), Position(4, 2));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;
+
+    chess.makeMove(Position(4,2), Position(2,4));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;
+
+    chess.makeMove(Position(2,4), Position(3,3));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;

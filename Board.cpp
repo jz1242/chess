@@ -140,21 +140,21 @@ int Board::checkValidDia(Position start, Position end) const {
         }
     }
     else if(right){
-        for(unsigned int i = 1; i < (end.x - start.x); i++){
+        for(int i = 1; i < (int)(end.x - start.x); i++){
             if(Board::getPiece(Position(start.x + i, start.y - i)) != nullptr){
                 return 0;
             }
         }
     }
     else if(up){
-        for(unsigned int i = 1; i < (end.x - start.x); i++){
+        for(unsigned int i = 1; i < (end.y - start.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y + i)) != nullptr){
                 return 0;
             }
         }
     }
     else{
-        for(unsigned int i = 1; i < (end.x - start.x); i++){
+        for(int i = 1; i < (int)(start.y - end.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y - i)) != nullptr){
                 return 0;
             }
