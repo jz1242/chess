@@ -84,7 +84,6 @@ int Board::checkValidRow(Position start, Position end) const {
         moveToRight  = 1;
     }
     if(moveToRight) {
-        std::cout << "moving to right" << std::endl;
         for(unsigned int i = start.y+1; i < end.y; i++){
 
             if(Board::getPiece(Position(start.y, i)) != nullptr){
@@ -93,7 +92,6 @@ int Board::checkValidRow(Position start, Position end) const {
         }
     }
     else {
-        std::cout << "moving to left" << std::endl;
         for(unsigned int i = end.y+1; i < start.y; i++){
             if(Board::getPiece(Position(start.y, i)) != nullptr){
                 return 0;

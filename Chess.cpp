@@ -34,6 +34,7 @@ int ChessGame::makeMove(Position start, Position end) {
         }
     }
     else{
+        
         Prompts::parseError();
     }
 
@@ -125,23 +126,19 @@ int main() {
     chess.setupBoard();
   
     printAllPieces(&chess);
-
     std::cout << std::endl;
-    chess.makeMove(Position(0, 0), Position(0, 2));
+    
+    chess.makeMove(Position(0, 1), Position(0, 2));
     printAllPieces(&chess);
-
-
-    std::cout <<chess.turn()<< std::endl;
-    chess.makeMove(Position(1, 1), Position(1, 2));
-
-
-    printAllPieces(&chess);
-    std::cout <<chess.turn()<< std::endl;
-   // chess.makeMove(Position(1, 0), Position(0, 2));
-    printAllPieces(&chess);
-    std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;
-    chess.makeMove(Position(1, 0), Position(2, 2));
-    printAllPieces(&chess);
 
+    chess.makeMove(Position(0, 0), Position(0, 3));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;
+
+    chess.makeMove(Position(0, 0), Position(0, 1));
+    printAllPieces(&chess);
+    //std::cout <<chess.turn()<< std::endl;
+    std::cout << std::endl;
 }
