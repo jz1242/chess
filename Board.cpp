@@ -78,6 +78,7 @@ Piece* Board::newPiece(int id, Player owner) {
     }
 }
 
+<<<<<<< HEAD
 int Board::checkValidRow(Position start, Position end) const {
     int moveToRight = 0;
     if(start.y < end.y){
@@ -102,3 +103,5 @@ int Board::checkValidRow(Position start, Position end) const {
     }
     return 1;
 }
+=======
+>>>>>>> f54c48d9e01780daa13abf01307fb9e34fb78c58
