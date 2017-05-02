@@ -26,6 +26,9 @@ int ChessGame::makeMove(Position start, Position end) {
             Prompts::blocked();
         }
         else if(a->validMove(start, end, *this)){
+            if(Board::getPiece(end) != nullptr){
+                Prompts::capture(playerTurn());
+            }
             retCode = Board::makeMove(start, end);
         }
         else{

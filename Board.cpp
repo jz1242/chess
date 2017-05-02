@@ -176,3 +176,4 @@ void Board::printAllPieces() const{
         std::cout<<std::endl;
     }
 }
+
