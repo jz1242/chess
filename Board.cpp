@@ -84,17 +84,20 @@ int Board::checkValidRow(Position start, Position end) const {
         moveToRight  = 1;
     }
     if(moveToRight) {
-        for(unsigned int i = start.y+1; i < end.y; i++){
-
+        for(unsigned int i = start.y+1; i <= end.y; i++){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
-                return 0;
+                if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
     else {
-        for(unsigned int i = end.y+1; i < start.y; i++){
+        for(unsigned int i = start.y - 1; i >= end.y; i--){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
-                return 0;
+                if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
@@ -107,16 +110,20 @@ int Board::checkValidCol(Position start, Position end) const {
         moveUp = 1;
     }
     if(moveUp) {
-        for(unsigned int i = start.x+1; i < end.x; i++){
+        for(unsigned int i = start.x+1; i <= end.x; i++){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
-                return 0;
+                if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
     else {
-        for(unsigned int i = end.x+1; i < start.x; i++){
+        for(unsigned int i = start.x - 1; i >= end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
-                return 0;
+                if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
@@ -132,30 +139,38 @@ int Board::checkValidDia(Position start, Position end) const {
         up = 1;
     }
     if(right && up){
-        for(unsigned int i = 1; i < (end.x - start.x); i++){
+        for(unsigned int i = 1; i <= (end.x - start.x); i++){
             if(Board::getPiece(Position(start.x + i, start.y + i)) != nullptr){
-                return 0;
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x + i, start.y + i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
     else if(right){
-        for(int i = 1; i < (int)(end.x - start.x); i++){
+        for(int i = 1; i <= (int)(end.x - start.x); i++){
             if(Board::getPiece(Position(start.x + i, start.y - i)) != nullptr){
-                return 0;
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x + i, start.y - i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
     else if(up){
-        for(unsigned int i = 1; i < (end.y - start.y); i++){
+        for(unsigned int i = 1; i <= (end.y - start.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y + i)) != nullptr){
-                return 0;
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x - i, start.y + i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
     else{
-        for(int i = 1; i < (int)(start.y - end.y); i++){
+        for(int i = 1; i <= (int)(start.y - end.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y - i)) != nullptr){
-                return 0;
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x - i, start.y - i))->owner() != playerTurn())){
+                    return 0;
+                }
             }
         }
     }
