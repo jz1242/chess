@@ -176,6 +176,19 @@ int Board::checkValidDia(Position start, Position end) const {
     }
     return 1;
 }
+
+void Board::promote(Position end) {
+    if(Board::getPiece(end)->owner() == 0) {
+        if(end.y == 7){
+            m_pieces[index(end)] = nullptr;
+            initPiece(4, Player(0), end);
+        }
+        if(end.y == 0){
+            m_pieces[index(end)] = nullptr;
+            initPiece(4, Player(1), end);
+        }
+    }
+}
 void Board::printAllPieces() const{
     //std::cout<<i<<" "<<j<<std::endl;
     for(int i = 7; i >= 0; i--){

@@ -30,6 +30,9 @@ int ChessGame::makeMove(Position start, Position end) {
                 Prompts::capture(playerTurn());
             }
             retCode = Board::makeMove(start, end);
+            if(a->id() == 0){
+                Board::promote(end);
+            }
         }
         else{
             Prompts::illegalMove();

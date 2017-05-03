@@ -107,6 +107,7 @@ public:
     int checkValidRow(Position start, Position end) const;
     int checkValidCol(Position start, Position end) const;
     int checkValidDia(Position start, Position end) const;
+    void promote(Position end);
     void printAllPieces()const;
 
 protected:
