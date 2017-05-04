@@ -76,7 +76,7 @@ public:
         Piece* temp = m_pieces[index(start)];
         m_pieces[index(end)] = temp;
         m_pieces[index(start)] = nullptr;
-        m_turn++;
+        //m_turn++;
         return 0;
     }
 
@@ -97,6 +97,7 @@ public:
             int indYEnd = end.at(1) - 49;
             makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
             //makeMove(Position(3,1), Position (3, 2));
+            inCheck();
             printAllPieces();
         }
     }
@@ -109,6 +110,8 @@ public:
     int checkValidDia(Position start, Position end) const;
     void promote(Position end);
     void printAllPieces()const;
+    int checkKing(Piece king, Position end) const;
+    int inCheck();
 
 protected:
     // All the factories registered with this Board
