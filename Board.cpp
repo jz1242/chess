@@ -234,14 +234,14 @@ bool Board::saveGame() const{
     char bufferx;
     if (myfile.is_open()){
         myfile << "chess\n";
-        myfile << Board::turn()-1 << std::endl;
+        myfile << Board::turn() << std::endl;
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
-                if(Board::getPiece(Position(j, i))) {
+                if(Board::getPiece(Position(j,i))) {
                     int x =  i + 97;
-                    itoa(x,bufferx,10);
+                    bufferx = (char)x;
                     myfile << Board::getPiece(Position(j,i))->owner()
-                    << " " << bufferx << j << " "
+                    << " " << bufferx << 8 - j << " "
                     << Board::getPiece(Position(j,i))->id()
                     << std::endl;
                 }

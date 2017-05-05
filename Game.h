@@ -4,6 +4,7 @@
 #include <map>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 // The list of players
 enum Player {
@@ -78,7 +79,7 @@ public:
         Piece* temp = m_pieces[index(start)];
         m_pieces[index(end)] = temp;
         m_pieces[index(start)] = nullptr;
-        //m_turn++;
+        m_turn++;
         return 0;
     }
 
