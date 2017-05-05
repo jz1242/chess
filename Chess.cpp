@@ -231,6 +231,11 @@ void ChessGame::setupBoard() {
 
 int main() {
     ChessGame chess;
+    chess.gameOptions();
+    
+    /*if(input == 2){
+        Prompts::loadGame();
+    }*/
     chess.setupBoard();
     chess.run();
 

@@ -2,6 +2,8 @@
 #define GAME_H
 #include <vector>
 #include <map>
+#include <fstream>
+#include <iostream>
 
 // The list of players
 enum Player {
@@ -84,13 +86,13 @@ public:
     // all of the gameplay loop logic here in the Board class rather than
     // overriding this method in the specialized Game-specific class
     virtual void run() {
-        while(1){
+        
         std::string start;
         std::string end;
         std::cin >> start;
-        std::cin >> end;
+        while(start != "q" && start != "save" && start != "forfeit"){
+            std::cin >> end;
        // std::cout << (int)start.at(0) <<std::endl;
-
             int indXStart = start.at(0) - 97;
             int indYStart = start.at(1) - 49;
             int indXEnd = end.at(0) - 97;
@@ -98,6 +100,10 @@ public:
             makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
             //makeMove(Position(3,1), Position (3, 2));
             printAllPieces();
+            std::cin >> start;
+        }
+        if(start == "save"){
+            Board::saveGame();
         }
     }
 
@@ -108,6 +114,9 @@ public:
     int checkValidCol(Position start, Position end) const;
     int checkValidDia(Position start, Position end) const;
     void promote(Position end);
+    bool loadGame();
+    void gameOptions();
+    bool saveGame() const;
     void printAllPieces()const;
 
 protected:

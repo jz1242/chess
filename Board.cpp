@@ -177,6 +177,42 @@ int Board::checkValidDia(Position start, Position end) const {
     return 1;
 }
 
+bool Board::loadGame() {
+    Prompts::loadGame();
+    std::string fileNameInput;
+    std::cin >> fileNameInput;
+    std::string line;
+    std::ifstream myfile(fileNameInput);
+    if (myfile.is_open()){
+        while ( getline(myfile,line) ){
+            std::cout << line[0] << " ";
+            std::cout << line[2] << " ";
+            std::cout << line[7] << '\n';
+        }
+        myfile.close();
+    }
+   /* for (size_t i = 0; i < pieces.size(); ++i) {
+        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        initPiece(pieces[i], WHITE, Position(i, 0));
+        initPiece(pieces[i], BLACK, Position(i, 7));
+        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+    }*/
+
+}
+
+void Board::gameOptions(){
+    int input = 0;
+    Prompts::menu();
+    while(!(std::cin >> input)){
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        Prompts::menu();
+    }
+    if(input == 2){
+        Board::loadGame();
+    }
+}
+
 void Board::promote(Position end) {
     if(Board::getPiece(end)->owner() == 0) {
         if(end.y == 7){
@@ -189,6 +225,34 @@ void Board::promote(Position end) {
         }
     }
 }
+
+bool Board::saveGame() const{
+    std::string fileName;
+    Prompts::saveGame();
+    std::cin >> fileName;
+    std::ofstream myfile (fileName + ".txt");
+    char bufferx;
+    if (myfile.is_open()){
+        myfile << "chess\n";
+        myfile << Board::turn()-1 << std::endl;
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
+                if(Board::getPiece(Position(j, i))) {
+                    int x =  i + 97;
+                    itoa(x,bufferx,10);
+                    myfile << Board::getPiece(Position(j,i))->owner()
+                    << " " << bufferx << j << " "
+                    << Board::getPiece(Position(j,i))->id()
+                    << std::endl;
+                }
+            }
+        }
+        myfile.close();
+    }
+    else Prompts::saveGame();
+}
+
+
 void Board::printAllPieces() const{
     //std::cout<<i<<" "<<j<<std::endl;
     for(int i = 7; i >= 0; i--){
