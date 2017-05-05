@@ -484,39 +484,56 @@ int Board::checkMovesKing(Player pl){
     Piece* k = Board::getPiece(start);
     int i = start.x;
     int j = start.y;
-    if(i + 1 <= 7 && j + 1 <=7){
+   if(i + 1 <= 7 && j + 1 <=7){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i+1, j+1));
+        if(k->validMove(start, Position(i+1, j+1), *this)){
+            tot += Board::checkKing(*k, Position(i+1, j+1));
+        }
+
     }
     if(i - 1 >= 0 && j + 1 <=7){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i-1, j+1));
+        if(k->validMove(start, Position(i-1, j+1), *this)){
+            tot += Board::checkKing(*k, Position(i-1, j+1));
+        }
     }
-    if(i + 1 <= 7 && j - 1 >= 0){
+ /*   if(i + 1 <= 7 && j - 1 >= 0){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i+1, j-1));
+        if(k->validMove(start, Position(i+1, j-1), *this)){
+            tot += Board::checkKing(*k, Position(i+1, j-1));
+        }
     }
     if(i - 1 >= 0 && j - 1 >= 0){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i-1, j-1));
+        if(k->validMove(start, Position(i-1, j-1), *this)){
+            tot += Board::checkKing(*k, Position(i-1, j-1));
+        }
     }
     if(i + 1 <= 7){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i+1, j));
+        if(k->validMove(start, Position(i+1, j), *this)){
+            tot += Board::checkKing(*k, Position(i+1, j));
+        }
     }
     if(i - 1 >= 0){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i-1, j));
+        if(k->validMove(start, Position(i-1, j), *this)){
+            tot += Board::checkKing(*k, Position(i-1, j));
+        }
     }
 
     if(j + 1 <= 7){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i, j+1));
+        if(k->validMove(start, Position(i, j+1), *this)){
+            tot += Board::checkKing(*k, Position(i, j+1));
+        }
     }
     if(j - 1 >= 0){
         k = Board::getPiece(start);
-        tot += Board::checkKing(*k, Position(i, j-1));
-    }
+        if(k->validMove(start, Position(i, j-1), *this)){
+            tot += Board::checkKing(*k, Position(i, j-1));
+        }
+    }*/
     return tot;
 }
 int Board::checkMovesOtherPieces(Player pl){
@@ -550,7 +567,7 @@ int Board::checkMovesOtherPieces(Player pl){
 }
 int Board::checkMovesPawn(Position start){
     Piece* p = Board::getPiece(Position(start));
-    int ret = -1;
+    int ret = 0;
     int i = start.x;
     int j = start.y;
     if(Board::validPosition(Position(i,j+1)) && p->validMove(start,Position(i,j+1), *this)){
@@ -585,7 +602,7 @@ int Board::checkMovesPawn(Position start){
 }
 int Board::checkMovesRook(Position start){
     Piece* p = Board::getPiece(Position(start));
-    int ret = -1;
+    int ret = 0;
     int x = start.x + 1;
     int y = start.y + 1;
 
@@ -644,7 +661,7 @@ int Board::checkMovesRook(Position start){
 }
 int Board::checkMovesKnight(Position start){
     Piece* p = Board::getPiece(Position(start));
-    int ret = -1;
+    int ret = 0;
     int x = start.x;
     int y = start.y;
     if(x+1 <= 7 && y+2 <=7){
@@ -747,7 +764,7 @@ int Board::checkMovesKnight(Position start){
 
 int Board::checkMovesBishop(Position start){
     Piece* p = Board::getPiece(Position(start));
-    int ret = -1;
+    int ret = 0;
 
     int i = start.x + 1;
     int j = start.y + 1;
@@ -818,7 +835,7 @@ int Board::checkMovesBishop(Position start){
 }
 int Board::checkMovesQueen(Position start){
     Piece* p = Board::getPiece(Position(start));
-    int ret = -1;
+    int ret = 0;
     int x = start.x + 1;
     int y = start.y + 1;
 
@@ -974,6 +991,7 @@ void Board::run() {
                 int indYStart = start.at(1) - 49;
                 int indXEnd = end.at(0) - 97;
                 int indYEnd = end.at(1) - 49;
+                bool runRest = false;
                 int mm = makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
                 if(mm == -7){
                     Prompts::outOfBounds();
@@ -986,46 +1004,46 @@ void Board::run() {
                 }
                 else if(mm == 3){
                     Prompts::capture(Player((m_turn+1)%2));
+                    runRest = true;
                 }
                 else if(mm == -1){
                     Prompts::illegalMove();
                 }
                 else{
+                    runRest = true;
+                }
+                if(runRest){
                     m_turn++;
-                }
+                    int check = inCheck();
+                    if(check == 1 && playerTurn() == WHITE){
 
+                        if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE) > 0){
+                           // std::cout<<Board::checkMovesKing(WHITE)<<std::endl;
+                            //std::cout<<Board::checkMovesOtherPieces(WHITE)<<std::endl;
+                            Prompts::check(BLACK);
+                        }
+                        else{
 
-                int check = inCheck();
-                if(check == 1 && playerTurn() == WHITE){
+                            Prompts::checkMate(BLACK);
+                        }
 
-                    if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE)){
-
-                        Prompts::check(BLACK);
                     }
-                    else{
+                   else if(check == 2 && playerTurn() == BLACK){
 
-                        Prompts::checkMate(BLACK);
+                        if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
+
+                            Prompts::check(WHITE);
+                        }
+                        else{
+
+                            Prompts::checkMate(WHITE);
+                        }
+
                     }
 
-                }
-               else if(check == 2 && playerTurn() == BLACK){
-
-                    if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
-
-                        Prompts::check(WHITE);
+                    if(printBoard){
+                        printAllPieces();
                     }
-                    else{
-
-                        Prompts::checkMate(WHITE);
-                    }
-
-                }
-
-
-
-
-                if(printBoard){
-                    printAllPieces();    
                 }
             }
             else{
