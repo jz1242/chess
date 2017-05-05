@@ -13,17 +13,20 @@ int ChessGame::makeMove(Position start, Position end) {
     //
     // We call Board's makeMove to handle any general move logic
     // Feel free to use this or change it as you see fit
-    int retCode = -1;
+    int retCode = 1;
     Piece* a = getPiece(start);
     if(!Board::validPosition(end)) {
         Prompts::outOfBounds();
+        retCode = -1;
     }
     else if(a != nullptr){
         if(a->owner() != Board::playerTurn()){
             Prompts::noPiece();
+            retCode = -1;
         }
         else if (Board::getPiece(end) != nullptr && Board::playerTurn() == Board::getPiece(end)->owner()) {
             Prompts::blocked();
+            retCode = -1;
         }
         else if(a->validMove(start, end, *this)){
             if(Board::getPiece(end) != nullptr){
@@ -36,11 +39,13 @@ int ChessGame::makeMove(Position start, Position end) {
         }
         else{
             Prompts::illegalMove();
+            retCode = -1;
         }
 
     }
     else{
         Prompts::noPiece();
+        retCode = -1;
     }
 
     return retCode;
@@ -168,7 +173,6 @@ int Knight::validMove(Position start, Position end,
         )){
         return 0;
     }
-    (void)board;
     return SUCCESS; 
 }
 
@@ -205,7 +209,7 @@ int Queen::validMove(Position start, Position end,
 }
 
 int King::validMove(Position start, Position end,
-    const Board& board) const { 
+    const Board& board) const {
     if(!(
         !(end.y == start.y && end.x == start.x) &&
         (end.x == start.x + 1 || end.x == start.x - 1 || end.x == start.x) &&
@@ -220,6 +224,7 @@ int King::validMove(Position start, Position end,
     return SUCCESS; 
 }
 
+
 // Setup the chess board with its initial pieces
 void ChessGame::setupBoard() {
     std::vector<int> pieces {
@@ -227,35 +232,15 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
-        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        //initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
     }
 }
 
-bool ChessGame::loadGame() {
-    Prompts::loadGame();
-    std::string fileNameInput;
-    std::cin >> fileNameInput;
-    std::string line;
-    std::ifstream myfile(fileNameInput);
-    int bufnumplayer, bufnumpiece;
-    if (myfile.is_open()){
-        getline(myfile, line); //rid of 'chess' line
-        getline(myfile, line); 
-        m_turn = (int)line[0] - '0';
-        while ( getline(myfile,line) ){
-            bufnumplayer = line[0] - '0';
-            bufnumpiece = line[5] - '0';
-            initPiece(bufnumpiece, Player(bufnumplayer), Position(7-(line[3] - 49), line[2] - 97));
-        }
-        myfile.close();
-    }
-    else {
-        Prompts::loadFailure();
-        return 0;
-    }
-    printAllPieces();
-    return 1;
+int main() {
+    ChessGame chess;
+    chess.setupBoard();
+    chess.run();
 }

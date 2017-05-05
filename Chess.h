@@ -129,8 +129,7 @@ public:
     // The method returns an integer with the status
     // >= 0 is SUCCESS, < 0 is failure
     virtual int makeMove(Position start, Position end) override;
-
-    bool loadGame();
+    int inCheck();
 
 };
 

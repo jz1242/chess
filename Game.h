@@ -2,9 +2,6 @@
 #define GAME_H
 #include <vector>
 #include <map>
-#include <fstream>
-#include <iostream>
-#include <sstream>
 
 // The list of players
 enum Player {
@@ -80,40 +77,48 @@ public:
         m_pieces[index(end)] = temp;
         m_pieces[index(start)] = nullptr;
         m_turn++;
-        return 0;
+        return 1;
     }
 
     // The main gameplay loop. Ideally, you should be able to implement
     // all of the gameplay loop logic here in the Board class rather than
     // overriding this method in the specialized Game-specific class
-    virtual void run();
+    virtual void run() {
+        while(1){
+        std::string start;
+        std::string end;
+        std::cin >> start;
+        std::cin >> end;
+       // std::cout << (int)start.at(0) <<std::endl;
+
+            int indXStart = start.at(0) - 97;
+            int indYStart = start.at(1) - 49;
+            int indXEnd = end.at(0) - 97;
+            int indYEnd = end.at(1) - 49;
+            makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
+            //makeMove(Position(3,1), Position (3, 2));
+            inCheck();
+            printAllPieces();
+        }
+    }
 
     // Returns "true" if the game is over
     virtual bool gameOver() const = 0 ;
 
-    // Returns 1 if position movement is horizontal
     int checkValidRow(Position start, Position end) const;
-
-    // Returns 1 if position movement is vertical
     int checkValidCol(Position start, Position end) const;
-
-    // Returns 1 if position movement is diagonal
     int checkValidDia(Position start, Position end) const;
-
-    //Promotes the pawn to a queen if it reaches the end of the board
     void promote(Position end);
-
-    //Returns input of 1 or 2 which are the game options
-    int gameOptions();
-
-    //Saves the game in the correct format
-    void saveGame() const;
-
-    //Prints the chessboard
     void printAllPieces()const;
-    
     int checkKing(Piece king, Position end) const;
     int inCheck();
+    int checkMovesKing(Position a);
+    int checkMovesOtherPieces(Piece* k);
+    int checkMovesPawn(Position start);
+    int checkMovesRook(Position start);
+    int checkMovesKnight(Position start);
+    int checkMovesBishop(Position start);
+    int checkMovesQueen(Position start);
 
 protected:
     // All the factories registered with this Board
@@ -189,9 +194,6 @@ public:
         // This particular method may include generic logic to check
         // for a valid move. 
 
-        (void)board;
-        (void)start;
-        (void)end;
         return 0;
     }
 

@@ -1,11 +1,9 @@
 #include <assert.h>
 #include <cctype>
 #include <iostream>
-#include <limits>
 
 #include "Game.h"
 #include "Prompts.h"
-#include "Terminal.h"
 
 ///////////////
 // Board //
@@ -80,7 +78,6 @@ Piece* Board::newPiece(int id, Player owner) {
     }
 }
 
-// Returns 1 if position movement is horizontal
 int Board::checkValidRow(Position start, Position end) const {
     int moveToRight = 0;
     if(start.y < end.y){
@@ -107,7 +104,6 @@ int Board::checkValidRow(Position start, Position end) const {
     return 1;
 }
 
-// Returns 1 if position movement is vertical
 int Board::checkValidCol(Position start, Position end) const {
     int moveUp = 0;
     if(start.x < end.x){
@@ -133,8 +129,6 @@ int Board::checkValidCol(Position start, Position end) const {
     }
     return 1;
 }
-
-// Returns 1 if position movement is diagonal
 int Board::checkValidDia(Position start, Position end) const {
     int right = 0;
     if(start.x < end.x){
@@ -156,7 +150,7 @@ int Board::checkValidDia(Position start, Position end) const {
     else if(right){
         for(int i = 1; i <= (int)(end.x - start.x); i++){
             if(Board::getPiece(Position(start.x + i, start.y - i)) != nullptr){
-                if(!(i == (int)(end.x - start.x) && Board::getPiece(Position(start.x + i, start.y - i))->owner() != playerTurn())){
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x + i, start.y - i))->owner() != playerTurn())){
                     return 0;
                 }
             }
@@ -174,7 +168,7 @@ int Board::checkValidDia(Position start, Position end) const {
     else{
         for(int i = 1; i <= (int)(start.y - end.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y - i)) != nullptr){
-                if(!(i == (int)(end.x - start.x) && Board::getPiece(Position(start.x - i, start.y - i))->owner() != playerTurn())){
+                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x - i, start.y - i))->owner() != playerTurn())){
                     return 0;
                 }
             }
@@ -183,7 +177,6 @@ int Board::checkValidDia(Position start, Position end) const {
     return 1;
 }
 
-//Promotes the pawn to a queen if it reaches the end of the board
 void Board::promote(Position end) {
     if(Board::getPiece(end)->owner() == 0) {
         if(end.y == 7){
@@ -196,76 +189,26 @@ void Board::promote(Position end) {
         }
     }
 }
-
-//Returns input of 1 or 2 which are the game options
-int Board::gameOptions(){
-    int input = 0;
-    while(input != 1 && input != 2){
-        Prompts::menu();
-        std::cin >> input;
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-    return input;
-}
-
-//Saves the game in the correct format
-void Board::saveGame() const{
-    std::string fileName;
-    Prompts::saveGame();
-    std::cin >> fileName;
-    std::ofstream myfile (fileName + ".txt");
-    char bufferx;
-    if (myfile.is_open()){
-        myfile << "chess\n";
-        myfile << Board::turn() << std::endl;
-        for(int i = 0; i < 8; i++){
-            for(int j = 0; j < 8; j++){
-                if(Board::getPiece(Position(j,i))) {
-                    int x =  i + 97;
-                    bufferx = (char)x;
-                    myfile << Board::getPiece(Position(j,i))->owner()
-                    << " " << bufferx << 8 - j << " "
-                    << Board::getPiece(Position(j,i))->id()
-                    << std::endl;
-                }
-            }
-        }
-        myfile.close();
-    }
-    else Prompts::saveGame();
-}
-
-//Prints the chessboard
 void Board::printAllPieces() const{
     //std::cout<<i<<" "<<j<<std::endl;
     for(int i = 7; i >= 0; i--){
         for(int j = 0; j <= 7; j++){
             Piece* a = Board::getPiece(Position(j, i));
-            if(j % 2 == i % 2){
-                Terminal::colorBg(Terminal::WHITE);
-            }
-            else{
-                Terminal::colorBg(Terminal::BLACK);
-            }
             if(!(a == nullptr)){
-                Terminal::colorFg(false, Terminal::CYAN);
                 std::cout<<a->id()<<" ";
             }
             else{
-                std::cout<<"  ";
+                std::cout<<"e ";
             }
         }
-        Terminal::colorBg(Terminal::DEFAULT_COLOR);
         std::cout<<std::endl;
     }
-    Terminal::colorFg(false, Terminal::DEFAULT_COLOR);
 }
 
 int Board::checkKing(Piece king, Position end) const{
     int i = end.x + 1;
     int j = end.y + 1;
-    Piece *a;
+    Piece *a = nullptr;
     while(i <= 7 && j <= 7 && a == nullptr){
         a = Board::getPiece(Position(i,j));
         i++;
@@ -274,7 +217,8 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-                if(Board::getPiece(Position(end.x+1,end.y+1))){
+                if(Board::getPiece(Position(end.x+1,end.y+1)) == a){
+
                     return 0;
                 }
             }
@@ -295,7 +239,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-                if(Board::getPiece(Position(end.x-1,end.y+1))){
+                if(Board::getPiece(Position(end.x-1,end.y+1)) == a){
                     return 0;
                 }
             }
@@ -317,7 +261,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-                if(Board::getPiece(Position(end.x+1,end.y-1))){
+                if(Board::getPiece(Position(end.x+1,end.y-1)) == a){
                     return 0;
                 }
             }
@@ -339,7 +283,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-                if(Board::getPiece(Position(end.x-1,end.y-1))){
+                if(Board::getPiece(Position(end.x-1,end.y-1)) == a){
                     return 0;
                 }
             }
@@ -391,7 +335,7 @@ int Board::checkKing(Piece king, Position end) const{
         a = Board::getPiece(Position(end.x,i));
         i--;
     }
-    if(!(a == nullptr)){
+    if(a != nullptr){
         if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
             return 0;
         }
@@ -441,7 +385,7 @@ int Board::inCheck(){
         for(int j = 0; j<=7; j++){
             if(Board::getPiece(Position(i, j)) != nullptr){
                 if(Board::getPiece(Position(i, j)) -> id() == 5){
-                    if(Board::getPiece(Position(i, j)) ->owner() == BLACK){
+                    if(Board::getPiece(Position(i, j)) ->owner() == WHITE){
                         kw = Board::getPiece(Position(i, j));
                         kws = Position(i, j);
                     }
@@ -456,63 +400,383 @@ int Board::inCheck(){
     }
 
     if(Board::checkKing(*kw, kws) == 0){
-        Prompts::check(BLACK);
+        if(Board::checkMovesKing(kws) > 0){
+            Prompts::check(BLACK);
+        }
+        else{
+            //checkMovesOtherPieces(kw);
+            Prompts::checkMate(BLACK);
+        }
+
         return 1;
     }
     else if(Board::checkKing(*kb, kbs) == 0){
-        Prompts::check(WHITE);
+        if(Board::checkMovesKing(kbs) > 0){
+            Prompts::check(WHITE);
+        }
+        else{
+            Prompts::checkMate(WHITE);
+        }
+        return 1;
     }
     return -1;
 
 }
+int Board::checkMovesKing(Position start){
+    int tot = 0;
+    Piece* k = Board::getPiece(start);
+    int i = start.x;
+    int j = start.y;
+    if(i + 1 <= 7 && j + 1 <=7){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i+1, j+1));
+    }
+    if(i - 1 >= 0 && j + 1 <=7){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i-1, j+1));
+    }
+    if(i + 1 <= 7 && j - 1 >= 0){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i+1, j-1));
+    }
+    if(i - 1 >= 0 && j - 1 >= 0){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i-1, j-1));
+    }
+    if(i + 1 <= 7){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i+1, j));
+    }
+    if(i - 1 >= 0){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i-1, j));
+    }
 
-bool checkValidPos(std::string input){
-    if(input.length() != 2){
-        return false;
+    if(j + 1 <= 7){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i, j+1));
     }
-    if(input[0] < 97 || input[0] > 104){
-        return false;
+    if(j - 1 >= 0){
+        k = Board::getPiece(start);
+        tot += Board::checkKing(*k, Position(i, j-1));
     }
-    return true;
+    return tot;
 }
-
-void Board::run() {
-    
-    std::string start;
-    std::string end;
-    Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
-    std::cin >> start;
-    bool printBoard = false;
-    while(start != "q" && start != "save" && start != "forfeit"){
-        if(start == "board"){
-            printBoard = true;
-            printAllPieces();
-        }
-        else{
-            std::cin >> end;
-            if(checkValidPos(start) && checkValidPos(end)){
-                int indXStart = start.at(0) - 97;
-                int indYStart = start.at(1) - 49;
-                int indXEnd = end.at(0) - 97;
-                int indYEnd = end.at(1) - 49;
-                makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
-                //makeMove(Position(3,1), Position (3, 2));
-                inCheck();
-                if(printBoard){
-                    printAllPieces();    
+int Board::checkMovesOtherPieces(Piece* k){
+    int move = 0;
+    for(int i = 0; i <= 7; i++){
+        for(int j = 0; j <= 7; j++){
+            Piece* a = Board::getPiece(Position(i,j));
+            if(a != nullptr){
+                if(a->owner() == k->owner()){
+                    if(a->id() == 0){
+                        move += Board::checkMovesPawn(Position(i,j));
+                    }
+                    if(a->id() == 1){
+                        move += Board::checkMovesRook(Position(i,j));
+                    }
+                    if(a->id() == 2){
+                        move += Board::checkMovesKnight(Position(i,j));
+                    }
+                    if(a->id() == 3){
+                        move += Board::checkMovesBishop(Position(i,j));
+                    }
+                    if(a->id() == 4){
+                        move += Board::checkMovesQueen(Position(i,j));
+                    }
                 }
             }
-            else{
-                Prompts::parseError();
-            }
         }
-            Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
-            std::cin >> start;
-        
+    }
+
+    return move;
+}
+int Board::checkMovesPawn(Position start){
+    Piece* p = Board::getPiece(Position(start));
+    int ret = -1;
+    int i = start.x;
+    int j = start.y;
+    if(Board::validPosition(Position(i,j+1)) && p->validMove(start,Position(i,j+1), *this)){
+        Board::makeMove(start, Position(i, j+1));
+        if(inCheck() == -1){
+            ret = 1;
+        }
+        Board::makeMove(Position(i, j+1), start);
+    }
+    if(Board::validPosition(Position(i+1,j+1)) && p->validMove(start, Position(i+1,j+1), *this)){
+        Board::makeMove(start, Position(i+1, j+1));
+        if(inCheck() == -1){
+            ret = 1;
+        }
+        Board::makeMove( Position(i+1, j+1), start);
+    }
+    if(Board::validPosition(Position(i-1,j+1)) && p->validMove(start, Position(i-1,j+1), *this)){
+        Board::makeMove(start, Position(i-1, j+1));
+        if(inCheck() == -1){
+            ret = 1;
+        }
+        Board::makeMove(Position(i-1, j+1), start);
+    }
+
+    return ret;
+}
+int Board::checkMovesRook(Position start){
+    Piece* p = Board::getPiece(Position(start));
+    int ret = -1;
+    int x = start.x + 1;
+    int y = start.y + 1;
+
+    for(int i = x; i<=7; i++){
+        if(p->validMove(start, Position(i, start.y), *this)){
+            Board::makeMove(start, Position(i, start.y));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, start.y),start);
+        }
 
     }
-    if(start == "save"){
-        Board::saveGame();
+    for(int i = y; i<=7; i++){
+        if(p->validMove(start, Position(start.x, i), *this)){
+            Board::makeMove(start, Position(start.x, i));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(start.x, i),start);
+        }
+
     }
+    return ret;
+}
+int Board::checkMovesKnight(Position start){
+    Piece* p = Board::getPiece(Position(start));
+    int ret = -1;
+    int x = start.x;
+    int y = start.y;
+
+    if(Board::validPosition(Position(x+1,y+2))){
+        if(p->validMove(start, Position(x+1, y+2), *this)){
+            Board::makeMove(start, Position(x+1, y+2));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x+1, y+2), start);
+        }
+
+    }
+    if(Board::validPosition(Position(x-1, y+2))){
+        if(p->validMove(start, Position(x-1, y+2), *this)){
+            Board::makeMove(start, Position(x+1, y+2));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x+1, y+2), start);
+        }
+    }
+    if(Board::validPosition(Position(x+1, y-2))){
+        if(p->validMove(start, Position(x+1, y-2), *this)){
+            Board::makeMove(start, Position(x+1, y-2));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x+1, y-2), start);
+        }
+
+        return 0;
+    }
+    if(Board::validPosition(Position(x-1, y-2))){
+        if(p->validMove(start, Position(x-1, y-2), *this)){
+            Board::makeMove(start, Position(x-1, y-2));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x-1, y-2), start);
+        }
+        return 0;
+    }
+    if(Board::validPosition(Position(x+2, y+1))){
+        if(p->validMove(start, Position(x+2, y+1), *this)){
+            Board::makeMove(start, Position(x+2, y+1));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x+2, y+1), start);
+        }
+    }
+    if(Board::validPosition(Position(x-2, y+1))){
+        if(p->validMove(start, Position(x-2, y+1), *this)){
+            Board::makeMove(start, Position(x-2, y+1));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x-2, y+1), start);
+        }
+    }
+    if(Board::validPosition(Position(x+2, y-1))){
+        if(p->validMove(start, Position(x+2, y-1), *this)){
+            Board::makeMove(start, Position(x+2, y-1));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x+2, y-1), start);
+        }
+    }
+    if(Board::validPosition(Position(x-2, y-1))){
+        if(p->validMove(start, Position(x-2, y-1), *this)){
+            Board::makeMove(start, Position(x-2, y-1));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(x-2, y-1), start);
+        }
+    }
+    return ret;
+}
+
+
+int Board::checkMovesBishop(Position start){
+    Piece* p = Board::getPiece(Position(start));
+    int ret = -1;
+
+    int i = start.x + 1;
+    int j = start.y + 1;
+    while(i <= 7 && j <= 7){
+        if(p->validMove(start, Position(i,j), *this)){
+            Board::makeMove(start, Position(i, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, j), start);
+        }
+        i++;
+        j++;
+    }
+
+   i = start.x - 1;
+   j = start.y + 1;
+   while(i >= 0 && j <= 7){
+       if(p->validMove(start, Position(i,j), *this)){
+           Board::makeMove(start, Position(i, j));
+           if(inCheck() == -1){
+               ret = 1;
+           }
+           Board::makeMove(Position(i, j), start);
+       }
+       i--;
+       j++;
+    }
+
+   i = start.x + 1;
+   j = start.y - 1;
+   while(i <= 7 && j >= 0){
+       if(p->validMove(start, Position(i,j), *this)){
+           Board::makeMove(start, Position(i, j));
+           if(inCheck() == -1){
+               ret = 1;
+           }
+           Board::makeMove(Position(i, j), start);
+       }
+       i++;
+       j--;
+    }
+
+    i = start.x - 1;
+    j = start.y - 1;
+    while(i >= 0 && j >= 0){
+        if(p->validMove(start, Position(i,j), *this)){
+            Board::makeMove(start, Position(i, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, j), start);
+        }
+        i--;
+        j--;
+    }
+    return ret;
+
+}
+int Board::checkMovesQueen(Position start){
+    Piece* p = Board::getPiece(Position(start));
+    int ret = -1;
+    int x = start.x + 1;
+    int y = start.y + 1;
+
+    for(int i = x; i<=7; i++){
+        if(p->validMove(start, Position(i, start.y), *this)){
+            Board::makeMove(start, Position(i, start.y));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, start.y),start);
+        }
+
+    }
+    for(int i = y; i<=7; i++){
+        if(p->validMove(start, Position(start.x, i), *this)){
+            Board::makeMove(start, Position(start.x, i));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(start.x, i),start);
+        }
+
+    }
+    int i = start.x + 1;
+    int j = start.y + 1;
+    while(i <= 7 && j <= 7){
+        if(p->validMove(start, Position(i,j), *this)){
+            Board::makeMove(start, Position(i, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, j), start);
+        }
+        i++;
+        j++;
+    }
+
+   i = start.x - 1;
+   j = start.y + 1;
+   while(i >= 0 && j <= 7){
+       if(p->validMove(start, Position(i,j), *this)){
+           Board::makeMove(start, Position(i, j));
+           if(inCheck() == -1){
+               ret = 1;
+           }
+           Board::makeMove(Position(i, j), start);
+       }
+       i--;
+       j++;
+    }
+
+   i = start.x + 1;
+   j = start.y - 1;
+   while(i <= 7 && j >= 0){
+       if(p->validMove(start, Position(i,j), *this)){
+           Board::makeMove(start, Position(i, j));
+           if(inCheck() == -1){
+               ret = 1;
+           }
+           Board::makeMove(Position(i, j), start);
+       }
+       i++;
+       j--;
+    }
+
+    i = start.x - 1;
+    j = start.y - 1;
+    while(i >= 0 && j >= 0){
+        if(p->validMove(start, Position(i,j), *this)){
+            Board::makeMove(start, Position(i, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, j), start);
+        }
+        i--;
+        j--;
+    }
+    return ret;
 
 }
