@@ -15,6 +15,7 @@ int ChessGame::makeMove(Position start, Position end) {
     // Feel free to use this or change it as you see fit
     int retCode = 0;
     Piece* a = getPiece(start);
+    Piece* temp = Board::getPiece(end);
     if(!Board::validPosition(end)) {
         retCode = -7;
     }
@@ -29,9 +30,41 @@ int ChessGame::makeMove(Position start, Position end) {
             if(Board::getPiece(end) != nullptr){
                 retCode = 3;
             }
-            Board::makeMove(start, end);
-            if(a->id() == 3){
+            if(a->id() == 0){
                 Board::promote(end);
+            }
+
+            if(inCheck() == 1 && playerTurn() == WHITE){
+                Board::makeMove(start, end);
+                if(inCheck() == 1){
+                    Board::makeMove(end, start);
+                    m_pieces[index(end)] = temp;
+                    retCode = -3;
+                }
+            }
+            else if(inCheck() == 2 && playerTurn() == BLACK){
+                Board::makeMove(start, end);
+                if(inCheck() == 2){
+                    Board::makeMove(end, start);
+                    m_pieces[index(end)] = temp;
+                    retCode = -3;
+                }
+            }
+            else if(inCheck() == -1){
+                Board::makeMove(start, end);
+                if(inCheck() == 2 && playerTurn() == BLACK){
+                    Board::makeMove(end, start);
+                    m_pieces[index(end)] = temp;
+                    retCode = -2;
+                }
+                else if(inCheck() == 1 && playerTurn() == WHITE){
+                    Board::makeMove(end, start);
+                    m_pieces[index(end)] = temp;
+                    retCode = -2;
+                }
+            }
+            else{
+                Board::makeMove(start, end);
             }
         }
         else{
@@ -232,10 +265,10 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
-        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        //initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
     }
 }
 
