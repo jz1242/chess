@@ -86,28 +86,7 @@ public:
     // The main gameplay loop. Ideally, you should be able to implement
     // all of the gameplay loop logic here in the Board class rather than
     // overriding this method in the specialized Game-specific class
-    virtual void run() {
-        
-        std::string start;
-        std::string end;
-        std::cin >> start;
-        while(start != "q" && start != "save" && start != "forfeit"){
-            std::cin >> end;
-       // std::cout << (int)start.at(0) <<std::endl;
-            int indXStart = start.at(0) - 97;
-            int indYStart = start.at(1) - 49;
-            int indXEnd = end.at(0) - 97;
-            int indYEnd = end.at(1) - 49;
-            makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
-            //makeMove(Position(3,1), Position (3, 2));
-            inCheck();
-            printAllPieces();
-            std::cin >> start;
-        }
-        if(start == "save"){
-            Board::saveGame();
-        }
-    }
+    virtual void run();
 
     // Returns "true" if the game is over
     virtual bool gameOver() const = 0 ;
@@ -117,7 +96,7 @@ public:
     int checkValidDia(Position start, Position end) const;
     void promote(Position end);
     int gameOptions();
-    bool saveGame() const;
+    void saveGame() const;
     void printAllPieces()const;
     int checkKing(Piece king, Position end) const;
     int inCheck();
@@ -196,6 +175,9 @@ public:
         // This particular method may include generic logic to check
         // for a valid move. 
 
+        (void)board;
+        (void)start;
+        (void)end;
         return 0;
     }
 

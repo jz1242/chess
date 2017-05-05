@@ -168,6 +168,7 @@ int Knight::validMove(Position start, Position end,
         )){
         return 0;
     }
+    (void)board;
     return SUCCESS; 
 }
 
@@ -243,15 +244,20 @@ bool ChessGame::loadGame() {
     if (myfile.is_open()){
         getline(myfile, line); //rid of 'chess' line
         getline(myfile, line); 
-        m_turn = (int)line[0];
+        m_turn = (int)line[0] - '0';
         while ( getline(myfile,line) ){
             bufnumplayer = line[0] - '0';
             bufnumpiece = line[5] - '0';
-            initPiece(bufnumpiece, Player(bufnumplayer), Position(line[3] - 49, line[2] - 97));
+            initPiece(bufnumpiece, Player(bufnumplayer), Position(7-(line[3] - 49), line[2] - 97));
         }
         myfile.close();
     }
+    else {
+        Prompts::loadFailure();
+        return 0;
+    }
     printAllPieces();
+    return 1;
 }
 
 int main() {
@@ -261,7 +267,9 @@ int main() {
         chess.setupBoard();
     }
     else {
-        chess.loadGame();
+        if(!chess.loadGame()){
+            return 0;
+        }
     }
     chess.run();
 
@@ -278,7 +286,7 @@ int main() {
     std::cout << std::endl;
     //chess.makeMove(Position(0,1), Position (0, 3));
 
-/*    chess.makeMove(Position(3, 0), Position(2, 2));
+    chess.makeMove(Position(3, 0), Position(2, 2));
     printAllPieces(&chess);
     //std::cout <<chess.turn()<< std::endl;
     std::cout << std::endl;

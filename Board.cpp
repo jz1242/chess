@@ -151,7 +151,7 @@ int Board::checkValidDia(Position start, Position end) const {
     else if(right){
         for(int i = 1; i <= (int)(end.x - start.x); i++){
             if(Board::getPiece(Position(start.x + i, start.y - i)) != nullptr){
-                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x + i, start.y - i))->owner() != playerTurn())){
+                if(!(i == (int)(end.x - start.x) && Board::getPiece(Position(start.x + i, start.y - i))->owner() != playerTurn())){
                     return 0;
                 }
             }
@@ -169,7 +169,7 @@ int Board::checkValidDia(Position start, Position end) const {
     else{
         for(int i = 1; i <= (int)(start.y - end.y); i++){
             if(Board::getPiece(Position(start.x - i, start.y - i)) != nullptr){
-                if(!(i == (end.x - start.x) && Board::getPiece(Position(start.x - i, start.y - i))->owner() != playerTurn())){
+                if(!(i == (int)(end.x - start.x) && Board::getPiece(Position(start.x - i, start.y - i))->owner() != playerTurn())){
                     return 0;
                 }
             }
@@ -202,7 +202,7 @@ void Board::promote(Position end) {
     }
 }
 
-bool Board::saveGame() const{
+void Board::saveGame() const{
     std::string fileName;
     Prompts::saveGame();
     std::cin >> fileName;
@@ -251,6 +251,7 @@ void Board::printAllPieces() const{
         Terminal::colorBg(Terminal::DEFAULT_COLOR);
         std::cout<<std::endl;
     }
+    Terminal::colorFg(false, Terminal::DEFAULT_COLOR);
 }
 
 int Board::checkKing(Piece king, Position end) const{
@@ -454,5 +455,56 @@ int Board::inCheck(){
         Prompts::check(WHITE);
     }
     return -1;
+
+}
+
+bool checkValidPos(std::string input){
+    if(input.length() != 2){
+        return false;
+    }
+    if(input[0] < 97 || input[0] > 104){
+        return false;
+    }
+    return true;
+}
+
+void Board::run() {
+    
+    std::string start;
+    std::string end;
+    Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
+    std::cin >> start;
+    bool printBoard = false;
+    while(start != "q" && start != "save" && start != "forfeit"){
+        if(start == "board"){
+            printBoard = true;
+            printAllPieces();
+        }
+        else{
+            std::cin >> end;
+            if(checkValidPos(start) && checkValidPos(end)){
+                int indXStart = start.at(0) - 97;
+                int indYStart = start.at(1) - 49;
+                int indXEnd = end.at(0) - 97;
+                int indYEnd = end.at(1) - 49;
+                makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
+                //makeMove(Position(3,1), Position (3, 2));
+                inCheck();
+                if(printBoard){
+                    printAllPieces();    
+                }
+            }
+            else{
+                Prompts::parseError();
+            }
+        }
+            Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
+            std::cin >> start;
+        
+
+    }
+    if(start == "save"){
+        Board::saveGame();
+    }
 
 }
