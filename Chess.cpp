@@ -13,36 +13,35 @@ int ChessGame::makeMove(Position start, Position end) {
     //
     // We call Board's makeMove to handle any general move logic
     // Feel free to use this or change it as you see fit
-    int retCode = -1;
+    int retCode = 0;
     Piece* a = getPiece(start);
     if(!Board::validPosition(end)) {
-        Prompts::outOfBounds();
+        retCode = -7;
     }
     else if(a != nullptr){
         if(a->owner() != Board::playerTurn()){
-            Prompts::noPiece();
+            retCode = -6;
         }
         else if (Board::getPiece(end) != nullptr && Board::playerTurn() == Board::getPiece(end)->owner()) {
-            Prompts::blocked();
+            retCode = -5;
         }
         else if(a->validMove(start, end, *this)){
             if(Board::getPiece(end) != nullptr){
-                Prompts::capture(playerTurn());
+                retCode = 3;
             }
-            retCode = Board::makeMove(start, end);
+            Board::makeMove(start, end);
             if(a->id() == 3){
                 Board::promote(end);
             }
         }
         else{
-            Prompts::illegalMove();
+            retCode = -1;
         }
 
     }
     else{
-        Prompts::noPiece();
+        retCode = -6;
     }
-
     return retCode;
 }
 
