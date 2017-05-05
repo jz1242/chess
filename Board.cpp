@@ -974,10 +974,27 @@ void Board::run() {
                 int indYStart = start.at(1) - 49;
                 int indXEnd = end.at(0) - 97;
                 int indYEnd = end.at(1) - 49;
-<<<<<<< HEAD
-                int a = makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
+                int mm = makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
+                if(mm == -7){
+                    Prompts::outOfBounds();
+                }
+                else if(mm == -6){
+                    Prompts::noPiece();
+                }
+                else if(mm == -5){
+                    Prompts::blocked();
+                }
+                else if(mm == 3){
+                    Prompts::capture(Player((m_turn+1)%2));
+                }
+                else if(mm == -1){
+                    Prompts::illegalMove();
+                }
+                else{
+                    m_turn++;
+                }
 
-                m_turn++;
+
                 int check = inCheck();
                 if(check == 1 && playerTurn() == WHITE){
 
@@ -1004,26 +1021,9 @@ void Board::run() {
 
                 }
 
-=======
-                int mm = makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
-                if(mm == -7){
-                    Prompts::outOfBounds();
-                }
-                else if(mm == -6){
-                    Prompts::noPiece();
-                }
-                else if(mm == -5){
-                    Prompts::blocked();
-                }
-                else if(mm == 3){
-                    Prompts::capture(Player((m_turn+1)%2));
-                }
-                else if(mm == -1){
-                    Prompts::illegalMove();
-                }
-                //makeMove(Position(3,1), Position (3, 2));
-                inCheck();
->>>>>>> 393060daf0fd328f70e90d27f5d627795e30ff31
+
+
+
                 if(printBoard){
                     printAllPieces();    
                 }
