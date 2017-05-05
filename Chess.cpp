@@ -247,7 +247,7 @@ bool ChessGame::loadGame() {
         while ( getline(myfile,line) ){
             bufnumplayer = line[0] - '0';
             bufnumpiece = line[5] - '0';
-            initPiece(bufnumpiece, Player(bufnumplayer), Position(line[2] - 97,line[3] - 49));
+            initPiece(bufnumpiece, Player(bufnumplayer), Position(line[3] - 49, line[2] - 97));
         }
         myfile.close();
     }
@@ -263,10 +263,6 @@ int main() {
     else {
         chess.loadGame();
     }
-    /*if(input == 2){
-        Prompts::loadGame();
-    }*/
-    
     chess.run();
 
   /*  printAllPieces(&chess);

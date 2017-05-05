@@ -248,6 +248,7 @@ void Board::printAllPieces() const{
                 std::cout<<"  ";
             }
         }
+        Terminal::colorBg(Terminal::DEFAULT_COLOR);
         std::cout<<std::endl;
     }
 }
