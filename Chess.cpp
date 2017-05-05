@@ -46,14 +46,14 @@ int ChessGame::makeMove(Position start, Position end) {
 }
 
 bool Board::checkMoveRow(Position start, Position end) const{
-    if(start.x != end.x){
+    if(start.x == end.x){
         return false;
     }
     return true;
 }
 
 bool Board::checkMoveCol(Position start, Position end) const{
-    if(start.y != end.y){
+    if(start.y == end.y){
         return false;
     }
     return true;
@@ -76,18 +76,15 @@ int Pawn::validMove(Position start, Position end,
             if(board.Board::getPiece(end) != nullptr){
                 return 0;
             }
-            if(!(board.Board::checkValidRow(start, end))){
+            if(!(board.Board::checkValidCol(start, end))){
                 return 0;
             }
         }
         else if(end.x == start.x && end.y == start.y + 1){
-
             if(board.Board::getPiece(end) != nullptr){
-
-                return 0;
+                    return 0;
             }
-            if(!(board.Board::checkValidRow(start, end))){
-
+            if(!(board.Board::checkValidCol(start, end))){
                 return 0;
             }
         }
@@ -110,7 +107,7 @@ int Pawn::validMove(Position start, Position end,
                 if(board.Board::getPiece(end) != nullptr){
                     return 0;
                 }
-                if(!(board.Board::checkValidRow(start, end))){
+                if(!(board.Board::checkValidCol(start, end))){
                     return 0;
                 }
             }
@@ -118,7 +115,7 @@ int Pawn::validMove(Position start, Position end,
                 if(board.Board::getPiece(end) != nullptr){
                     return 0;
                 }
-                if(!(board.Board::checkValidRow(start, end))){
+                if(!(board.Board::checkValidCol(start, end))){
                     return 0;
                 }
             }
@@ -138,6 +135,8 @@ int Pawn::validMove(Position start, Position end,
     }
     return SUCCESS;
 }
+    
+
 
 int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
@@ -145,11 +144,14 @@ int Rook::validMove(Position start, Position end,
         if (!(board.Board::checkValidRow(start, end))) {
             return 0;
         }
+
     } 
     else if (board.Board::checkMoveCol(start, end)) {
         if(!(board.Board::checkValidCol(start, end))) {
             return 0;
-        }   
+        }
+
+
     }
     else {
         return 0;
@@ -167,7 +169,9 @@ int Knight::validMove(Position start, Position end,
         )){
         return 0;
     }
-    (void)board;
+    if(board.Board::getPiece(end) != nullptr && board.Board::getPiece(end)->owner() == board.Board::getPiece(start)->owner()){
+        return 0;
+    }
     return SUCCESS; 
 }
 
@@ -183,19 +187,18 @@ int Queen::validMove(Position start, Position end,
         const Board& board) const { 
     if(board.Board::checkMoveDia(start, end)){
         if(!board.Board::checkValidDia(start, end)){
-            
             return 0;
         }
     }
-    else if(board.Board::checkMoveRow(start, end)) {
+    if(board.Board::checkMoveRow(start, end)) {
         if (!board.Board::checkValidRow(start, end)) {
             return 0;
         }
     } 
-    else if (board.Board::checkMoveCol(start, end)) {
+    if (board.Board::checkMoveCol(start, end)) {
         if(!board.Board::checkValidCol(start, end)) {
             return 0;
-        }   
+        }
     }
     else{
         return 0;

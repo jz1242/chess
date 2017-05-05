@@ -76,11 +76,11 @@ public:
     virtual int makeMove(Position start, Position end) {
         // This method may handle the parts of moving pieces that
         // generalize over different board games
+
         Piece* temp = m_pieces[index(start)];
         m_pieces[index(end)] = temp;
         m_pieces[index(start)] = nullptr;
-        m_turn++;
-        return 0;
+        return 1;
     }
 
     // The main gameplay loop. Ideally, you should be able to implement
@@ -114,8 +114,8 @@ public:
     
     int checkKing(Piece king, Position end) const;
     int inCheck();
-	int checkMovesKing(Position a);
-    int checkMovesOtherPieces(Piece* k);
+	int checkMovesKing(Player pl);
+    int checkMovesOtherPieces(Player pl);
     int checkMovesPawn(Position start);
     int checkMovesRook(Position start);
     int checkMovesKnight(Position start);

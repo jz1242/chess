@@ -81,7 +81,7 @@ Piece* Board::newPiece(int id, Player owner) {
 }
 
 // Returns 1 if position movement is horizontal
-int Board::checkValidRow(Position start, Position end) const {
+int Board::checkValidCol(Position start, Position end) const {
     int moveToRight = 0;
     if(start.y < end.y){
         moveToRight  = 1;
@@ -96,7 +96,7 @@ int Board::checkValidRow(Position start, Position end) const {
         }
     }
     else {
-        for(unsigned int i = start.y - 1; i >= end.y; i--){
+        for(int i = start.y - 1; i >= end.y && i >= 0; i--){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
                 if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
                     return 0;
@@ -108,7 +108,7 @@ int Board::checkValidRow(Position start, Position end) const {
 }
 
 // Returns 1 if position movement is vertical
-int Board::checkValidCol(Position start, Position end) const {
+int Board::checkValidRow(Position start, Position end) const {
     int moveUp = 0;
     if(start.x < end.x){
         moveUp = 1;
@@ -123,7 +123,7 @@ int Board::checkValidCol(Position start, Position end) const {
         }
     }
     else {
-        for(unsigned int i = start.x - 1; i >= end.x; i--){
+        for(int i = start.x - 1; i >= end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
                     return 0;
@@ -457,29 +457,29 @@ int Board::inCheck(){
     }
 
     if(Board::checkKing(*kw, kws) == 0){
-        if(Board::checkMovesKing(kws) > 0){
-            Prompts::check(BLACK);
-        }
-        else{
-            //checkMovesOtherPieces(kw);
-            Prompts::checkMate(BLACK);
-        }
 
         return 1;
     }
     else if(Board::checkKing(*kb, kbs) == 0){
-        if(Board::checkMovesKing(kbs) > 0){
-            Prompts::check(WHITE);
-        }
-        else{
-            Prompts::checkMate(WHITE);
-        }
-        return 1;
+        return 2;
     }
     return -1;
 
 }
-int Board::checkMovesKing(Position start){
+int Board::checkMovesKing(Player pl){
+    Position start;
+    for(int i = 0; i <=7; i++){
+        for(int j = 0; j<=7; j++){
+            if(Board::getPiece(Position(i, j)) != nullptr){
+                if(Board::getPiece(Position(i, j)) -> id() == 5){
+                    if(Board::getPiece(Position(i, j)) ->owner() == pl){
+                        start = Position(i, j);
+                    }
+                }
+            }
+
+        }
+    }
     int tot = 0;
     Piece* k = Board::getPiece(start);
     int i = start.x;
@@ -519,13 +519,13 @@ int Board::checkMovesKing(Position start){
     }
     return tot;
 }
-int Board::checkMovesOtherPieces(Piece* k){
+int Board::checkMovesOtherPieces(Player pl){
     int move = 0;
     for(int i = 0; i <= 7; i++){
         for(int j = 0; j <= 7; j++){
             Piece* a = Board::getPiece(Position(i,j));
             if(a != nullptr){
-                if(a->owner() == k->owner()){
+                if(a->owner() == pl){
                     if(a->id() == 0){
                         move += Board::checkMovesPawn(Position(i,j));
                     }
@@ -545,7 +545,7 @@ int Board::checkMovesOtherPieces(Piece* k){
             }
         }
     }
-
+    std::cout<<move<<std::endl;
     return move;
 }
 int Board::checkMovesPawn(Position start){
@@ -554,25 +554,31 @@ int Board::checkMovesPawn(Position start){
     int i = start.x;
     int j = start.y;
     if(Board::validPosition(Position(i,j+1)) && p->validMove(start,Position(i,j+1), *this)){
+        Piece* a = Board::getPiece(Position(i, j+1));
         Board::makeMove(start, Position(i, j+1));
         if(inCheck() == -1){
             ret = 1;
         }
         Board::makeMove(Position(i, j+1), start);
+        m_pieces[index(Position(i, j+1))] = a;
     }
     if(Board::validPosition(Position(i+1,j+1)) && p->validMove(start, Position(i+1,j+1), *this)){
+        Piece* a = Board::getPiece(Position(i+1, j+1));
         Board::makeMove(start, Position(i+1, j+1));
         if(inCheck() == -1){
             ret = 1;
         }
         Board::makeMove( Position(i+1, j+1), start);
+        m_pieces[index(Position(i+1, j+1))] = a;
     }
-    if(Board::validPosition(Position(i-1,j+1)) && p->validMove(start, Position(i-1,j+1), *this)){
+    if(i-1>-0 && j+1 <= 7 && p->validMove(start, Position(i-1,j+1), *this)){
+        Piece* a = Board::getPiece(Position(i - 1, j+1));
         Board::makeMove(start, Position(i-1, j+1));
         if(inCheck() == -1){
             ret = 1;
         }
         Board::makeMove(Position(i-1, j+1), start);
+        m_pieces[index(Position(i-1, j+1))] = a;
     }
 
     return ret;
@@ -585,24 +591,55 @@ int Board::checkMovesRook(Position start){
 
     for(int i = x; i<=7; i++){
         if(p->validMove(start, Position(i, start.y), *this)){
+            Piece* a = Board::getPiece(Position(i, start.y));
             Board::makeMove(start, Position(i, start.y));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, start.y),start);
+            m_pieces[index(Position(i, start.y))] = a;
         }
 
     }
-    for(int i = y; i<=7; i++){
-        if(p->validMove(start, Position(start.x, i), *this)){
-            Board::makeMove(start, Position(start.x, i));
+    for(int j = y; j<=7; j++){
+        if(p->validMove(start, Position(start.x, j), *this)){
+            Piece* a = Board::getPiece(Position(start.x, j));
+            Board::makeMove(start, Position(start.x, j));
             if(inCheck() == -1){
                 ret = 1;
             }
-            Board::makeMove(Position(start.x, i),start);
+            Board::makeMove(Position(start.x, j),start);
+            m_pieces[index(Position(start.x, j))] = a;
         }
 
     }
+    x = start.x - 1;
+    y = start.y - 1;
+   for(int i = x; i>=0; i--){
+        if(p->validMove(start, Position(i, start.y), *this)){
+            Piece* a = Board::getPiece(Position(i, start.y));
+            Board::makeMove(start, Position(i, start.y));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, start.y),start);
+            m_pieces[index(Position(i, start.y))] = a;
+        }
+
+    }
+    for(int j = y; j>=0; j--){
+        if(p->validMove(start, Position(start.x, j), *this)){
+            Piece* a = Board::getPiece(Position(start.x, j));
+            Board::makeMove(start, Position(start.x, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(start.x, j),start);
+            m_pieces[index(Position(start.x, j))] = a;
+        }
+
+    }
+
     return ret;
 }
 int Board::checkMovesKnight(Position start){
@@ -610,81 +647,98 @@ int Board::checkMovesKnight(Position start){
     int ret = -1;
     int x = start.x;
     int y = start.y;
-
-    if(Board::validPosition(Position(x+1,y+2))){
+    if(x+1 <= 7 && y+2 <=7){
         if(p->validMove(start, Position(x+1, y+2), *this)){
+            Piece* a = Board::getPiece(Position(x+1, y+2));
             Board::makeMove(start, Position(x+1, y+2));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x+1, y+2), start);
+            m_pieces[index(Position(x+1, y+2))] = a;
         }
 
     }
-    if(Board::validPosition(Position(x-1, y+2))){
+    if(x-1>=0 && y+2<=7){
         if(p->validMove(start, Position(x-1, y+2), *this)){
-            Board::makeMove(start, Position(x+1, y+2));
+            Piece* a = Board::getPiece(Position(x-1, y+2));
+            Board::makeMove(start, Position(x-1, y+2));
             if(inCheck() == -1){
                 ret = 1;
             }
-            Board::makeMove(Position(x+1, y+2), start);
+            Board::makeMove(Position(x-1, y+2), start);
+            m_pieces[index(Position(x-1, y+2))] = a;
         }
     }
-    if(Board::validPosition(Position(x+1, y-2))){
+    if(x+1<=7 && y-2 >= 0){
         if(p->validMove(start, Position(x+1, y-2), *this)){
+            Piece* a = Board::getPiece(Position(x+1, y-2));
             Board::makeMove(start, Position(x+1, y-2));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x+1, y-2), start);
+            m_pieces[index(Position(x+1, y-2))] = a;
         }
 
         return 0;
     }
-    if(Board::validPosition(Position(x-1, y-2))){
+    if(x-1>=0 && y-2 >=0){
         if(p->validMove(start, Position(x-1, y-2), *this)){
+            Piece* a = Board::getPiece(Position(x-1, y-2));
             Board::makeMove(start, Position(x-1, y-2));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x-1, y-2), start);
+            m_pieces[index(Position(x-1, y-2))] = a;
         }
         return 0;
     }
     if(Board::validPosition(Position(x+2, y+1))){
         if(p->validMove(start, Position(x+2, y+1), *this)){
+            Piece* a = Board::getPiece(Position(x+2, y+1));
             Board::makeMove(start, Position(x+2, y+1));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x+2, y+1), start);
+            m_pieces[index(Position(x+2, y+1))] = a;
         }
     }
-    if(Board::validPosition(Position(x-2, y+1))){
+    if(x-2 >= 0 && y+1 <=7){
         if(p->validMove(start, Position(x-2, y+1), *this)){
-            Board::makeMove(start, Position(x-2, y+1));
+
+            Piece* a = Board::getPiece(Position(x-2, y+1));
+
+            Board::makeMove(start, Position(4, 1));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x-2, y+1), start);
+            m_pieces[index(Position(x-2, y+1))] = a;
         }
     }
-    if(Board::validPosition(Position(x+2, y-1))){
+    if(x+2 <= 7 && y-1 >=0){
         if(p->validMove(start, Position(x+2, y-1), *this)){
+            Piece* a = Board::getPiece(Position(x+2, y-1));
             Board::makeMove(start, Position(x+2, y-1));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x+2, y-1), start);
+            m_pieces[index(Position(x+2, y-1))] = a;
         }
     }
-    if(Board::validPosition(Position(x-2, y-1))){
+    if(x-2 >= 0 && y-1 >= 0){
         if(p->validMove(start, Position(x-2, y-1), *this)){
+            Piece* a = Board::getPiece(Position(x-2, y-1));
             Board::makeMove(start, Position(x-2, y-1));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(x-2, y-1), start);
+            m_pieces[index(Position(x-2, y-1))] = a;
         }
     }
     return ret;
@@ -699,11 +753,13 @@ int Board::checkMovesBishop(Position start){
     int j = start.y + 1;
     while(i <= 7 && j <= 7){
         if(p->validMove(start, Position(i,j), *this)){
+            Piece* a = Board::getPiece(Position(i, j));
             Board::makeMove(start, Position(i, j));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, j), start);
+            m_pieces[index(Position(i, j))] = a;
         }
         i++;
         j++;
@@ -713,11 +769,14 @@ int Board::checkMovesBishop(Position start){
    j = start.y + 1;
    while(i >= 0 && j <= 7){
        if(p->validMove(start, Position(i,j), *this)){
+           Piece* a = Board::getPiece(Position(i, j));
            Board::makeMove(start, Position(i, j));
            if(inCheck() == -1){
                ret = 1;
            }
            Board::makeMove(Position(i, j), start);
+           m_pieces[index(Position(i, j))] = a;
+
        }
        i--;
        j++;
@@ -727,11 +786,13 @@ int Board::checkMovesBishop(Position start){
    j = start.y - 1;
    while(i <= 7 && j >= 0){
        if(p->validMove(start, Position(i,j), *this)){
+           Piece* a = Board::getPiece(Position(i, j));
            Board::makeMove(start, Position(i, j));
            if(inCheck() == -1){
                ret = 1;
            }
            Board::makeMove(Position(i, j), start);
+           m_pieces[index(Position(i, j))] = a;
        }
        i++;
        j--;
@@ -741,11 +802,13 @@ int Board::checkMovesBishop(Position start){
     j = start.y - 1;
     while(i >= 0 && j >= 0){
         if(p->validMove(start, Position(i,j), *this)){
+            Piece* a = Board::getPiece(Position(i, j));
             Board::makeMove(start, Position(i, j));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, j), start);
+            m_pieces[index(Position(i, j))] = a;
         }
         i--;
         j--;
@@ -761,33 +824,67 @@ int Board::checkMovesQueen(Position start){
 
     for(int i = x; i<=7; i++){
         if(p->validMove(start, Position(i, start.y), *this)){
+            Piece* a = Board::getPiece(Position(i, start.y));
             Board::makeMove(start, Position(i, start.y));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, start.y),start);
+            m_pieces[index(Position(i, start.y))] = a;
         }
 
     }
     for(int i = y; i<=7; i++){
         if(p->validMove(start, Position(start.x, i), *this)){
+            Piece* a = Board::getPiece(Position(start.x, i));
             Board::makeMove(start, Position(start.x, i));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(start.x, i),start);
+            m_pieces[index(Position(start.x, i))] = a;
         }
 
     }
+
+    x = start.x - 1;
+    y = start.y - 1;
+    for(int i = x; i>=0; i--){
+        if(p->validMove(start, Position(i, start.y), *this)){
+            Piece* a = Board::getPiece(Position(i, start.y));
+            Board::makeMove(start, Position(i, start.y));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(i, start.y),start);
+            m_pieces[index(Position(i, start.y))] = a;
+        }
+
+    }
+    for(int j = y; j>=0; j--){
+        if(p->validMove(start, Position(start.x, j), *this)){
+            Piece* a = Board::getPiece(Position(start.x, j));
+            Board::makeMove(start, Position(start.x, j));
+            if(inCheck() == -1){
+                ret = 1;
+            }
+            Board::makeMove(Position(start.x, j),start);
+            m_pieces[index(Position(start.x, j))] = a;
+        }
+
+    }
+
     int i = start.x + 1;
     int j = start.y + 1;
     while(i <= 7 && j <= 7){
         if(p->validMove(start, Position(i,j), *this)){
+            Piece* a = Board::getPiece(Position(i, j));
             Board::makeMove(start, Position(i, j));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, j), start);
+            m_pieces[index(Position(i, j))] = a;
         }
         i++;
         j++;
@@ -797,11 +894,13 @@ int Board::checkMovesQueen(Position start){
    j = start.y + 1;
    while(i >= 0 && j <= 7){
        if(p->validMove(start, Position(i,j), *this)){
+           Piece* a = Board::getPiece(Position(i, j));
            Board::makeMove(start, Position(i, j));
            if(inCheck() == -1){
                ret = 1;
            }
            Board::makeMove(Position(i, j), start);
+           m_pieces[index(Position(i, j))] = a;
        }
        i--;
        j++;
@@ -811,11 +910,13 @@ int Board::checkMovesQueen(Position start){
    j = start.y - 1;
    while(i <= 7 && j >= 0){
        if(p->validMove(start, Position(i,j), *this)){
+           Piece* a = Board::getPiece(Position(i, j));
            Board::makeMove(start, Position(i, j));
            if(inCheck() == -1){
                ret = 1;
            }
            Board::makeMove(Position(i, j), start);
+           m_pieces[index(Position(i, j))] = a;
        }
        i++;
        j--;
@@ -825,11 +926,13 @@ int Board::checkMovesQueen(Position start){
     j = start.y - 1;
     while(i >= 0 && j >= 0){
         if(p->validMove(start, Position(i,j), *this)){
+            Piece* a = Board::getPiece(Position(i, j));
             Board::makeMove(start, Position(i, j));
             if(inCheck() == -1){
                 ret = 1;
             }
             Board::makeMove(Position(i, j), start);
+            m_pieces[index(Position(i, j))] = a;
         }
         i--;
         j--;
@@ -856,9 +959,13 @@ void Board::run() {
     std::cin >> start;
     bool printBoard = false;
     while(start != "q" && start != "save" && start != "forfeit"){
+
         if(start == "board"){
-            printBoard = true;
-            printAllPieces();
+            printBoard = !printBoard;
+            if(printBoard){
+                printBoard = true;
+                printAllPieces();
+            }
         }
         else{
             std::cin >> end;
@@ -883,8 +990,40 @@ void Board::run() {
                 else if(mm == -1){
                     Prompts::illegalMove();
                 }
-                //makeMove(Position(3,1), Position (3, 2));
-                inCheck();
+                else{
+                    m_turn++;
+                }
+
+
+                int check = inCheck();
+                if(check == 1 && playerTurn() == WHITE){
+
+                    if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE)){
+
+                        Prompts::check(BLACK);
+                    }
+                    else{
+
+                        Prompts::checkMate(BLACK);
+                    }
+
+                }
+               else if(check == 2 && playerTurn() == BLACK){
+
+                    if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
+
+                        Prompts::check(WHITE);
+                    }
+                    else{
+
+                        Prompts::checkMate(WHITE);
+                    }
+
+                }
+
+
+
+
                 if(printBoard){
                     printAllPieces();    
                 }
@@ -895,7 +1034,7 @@ void Board::run() {
         }
             Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
             std::cin >> start;
-        
+
 
     }
     if(start == "save"){
