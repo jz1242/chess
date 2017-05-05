@@ -227,10 +227,17 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
+<<<<<<< HEAD
         //initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
         //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+=======
+        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        initPiece(pieces[i], WHITE, Position(i, 0));
+        initPiece(pieces[i], BLACK, Position(i, 7));
+        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+>>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
     }
 }
 

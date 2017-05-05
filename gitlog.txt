@@ -1,0 +1,23 @@
+commit 14ac0e11633b3ed2ff0d8bfe63939e27948f0183
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri Apr 28 13:26:45 2017 -0400
+
+    gitlogged
+
+commit 043e3810d20ca8e19f6b503033d01a86fe77759c
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri Apr 28 13:26:14 2017 -0400
+
+    Printed board, but inverted to what they have
+
+commit bf5a844198f5b8527c4f3c9a4ca2cf35b424cc31
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Wed Apr 26 21:34:21 2017 -0400
+
+    All initial files
+
+commit 283d75c5a2e68a4e73c736411efece6c80f1b9e8
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Wed Apr 26 10:44:33 2017 -0400
+
+    Initial commit

@@ -114,6 +114,7 @@ public:
     
     int checkKing(Piece king, Position end) const;
     int inCheck();
+<<<<<<< HEAD
 	int checkMovesKing(Position a);
     int checkMovesOtherPieces(Piece* k);
     int checkMovesPawn(Position start);
@@ -121,6 +122,8 @@ public:
     int checkMovesKnight(Position start);
     int checkMovesBishop(Position start);
     int checkMovesQueen(Position start);
+=======
+>>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
 
 protected:
     // All the factories registered with this Board
