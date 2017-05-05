@@ -4,6 +4,7 @@
 
 #include "Game.h"
 #include "Prompts.h"
+#include "Terminal.h"
 
 ///////////////
 // Board //
@@ -177,40 +178,15 @@ int Board::checkValidDia(Position start, Position end) const {
     return 1;
 }
 
-bool Board::loadGame() {
-    Prompts::loadGame();
-    std::string fileNameInput;
-    std::cin >> fileNameInput;
-    std::string line;
-    std::ifstream myfile(fileNameInput);
-    if (myfile.is_open()){
-        while ( getline(myfile,line) ){
-            std::cout << line[0] << " ";
-            std::cout << line[2] << " ";
-            std::cout << line[7] << '\n';
-        }
-        myfile.close();
-    }
-   /* for (size_t i = 0; i < pieces.size(); ++i) {
-        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
-        initPiece(pieces[i], WHITE, Position(i, 0));
-        initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
-    }*/
-
-}
-
-void Board::gameOptions(){
+int Board::gameOptions(){
     int input = 0;
-    Prompts::menu();
-    while(!(std::cin >> input)){
+    while(input != 1 && input != 2){
+        Prompts::menu();
+        std::cin >> input;
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        Prompts::menu();
     }
-    if(input == 2){
-        Board::loadGame();
-    }
+    return input;
 }
 
 void Board::promote(Position end) {
@@ -258,11 +234,18 @@ void Board::printAllPieces() const{
     for(int i = 7; i >= 0; i--){
         for(int j = 0; j <= 7; j++){
             Piece* a = Board::getPiece(Position(j, i));
+            if(j % 2 == i % 2){
+                Terminal::colorBg(Terminal::WHITE);
+            }
+            else{
+                Terminal::colorBg(Terminal::BLACK);
+            }
             if(!(a == nullptr)){
+                Terminal::colorFg(false, Terminal::CYAN);
                 std::cout<<a->id()<<" ";
             }
             else{
-                std::cout<<"e ";
+                std::cout<<"  ";
             }
         }
         std::cout<<std::endl;

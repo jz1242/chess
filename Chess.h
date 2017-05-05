@@ -130,6 +130,8 @@ public:
     // >= 0 is SUCCESS, < 0 is failure
     virtual int makeMove(Position start, Position end) override;
 
+    bool loadGame();
+
 };
 
 #endif

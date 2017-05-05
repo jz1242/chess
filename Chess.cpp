@@ -233,14 +233,40 @@ void ChessGame::setupBoard() {
     }
 }
 
+bool ChessGame::loadGame() {
+    Prompts::loadGame();
+    std::string fileNameInput;
+    std::cin >> fileNameInput;
+    std::string line;
+    std::ifstream myfile(fileNameInput);
+    int bufnumplayer, bufnumpiece;
+    if (myfile.is_open()){
+        getline(myfile, line); //rid of 'chess' line
+        getline(myfile, line); 
+        m_turn = (int)line[0];
+        while ( getline(myfile,line) ){
+            bufnumplayer = line[0] - '0';
+            bufnumpiece = line[5] - '0';
+            initPiece(bufnumpiece, Player(bufnumplayer), Position(line[2] - 97,line[3] - 49));
+        }
+        myfile.close();
+    }
+    printAllPieces();
+}
+
 int main() {
-    ChessGame chess;
-    chess.gameOptions();
     
+    ChessGame chess;
+    if(chess.gameOptions() == 1){
+        chess.setupBoard();
+    }
+    else {
+        chess.loadGame();
+    }
     /*if(input == 2){
         Prompts::loadGame();
     }*/
-    chess.setupBoard();
+    
     chess.run();
 
   /*  printAllPieces(&chess);

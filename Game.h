@@ -116,8 +116,7 @@ public:
     int checkValidCol(Position start, Position end) const;
     int checkValidDia(Position start, Position end) const;
     void promote(Position end);
-    bool loadGame();
-    void gameOptions();
+    int gameOptions();
     bool saveGame() const;
     void printAllPieces()const;
     int checkKing(Piece king, Position end) const;
