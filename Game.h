@@ -91,13 +91,27 @@ public:
     // Returns "true" if the game is over
     virtual bool gameOver() const = 0 ;
 
+    // Returns 1 if position movement is horizontal
     int checkValidRow(Position start, Position end) const;
+
+    // Returns 1 if position movement is vertical
     int checkValidCol(Position start, Position end) const;
+
+    // Returns 1 if position movement is diagonal
     int checkValidDia(Position start, Position end) const;
+
+    //Promotes the pawn to a queen if it reaches the end of the board
     void promote(Position end);
+
+    //Returns input of 1 or 2 which are the game options
     int gameOptions();
+
+    //Saves the game in the correct format
     void saveGame() const;
+
+    //Prints the chessboard
     void printAllPieces()const;
+    
     int checkKing(Piece king, Position end) const;
     int inCheck();
 

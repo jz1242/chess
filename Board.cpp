@@ -79,6 +79,7 @@ Piece* Board::newPiece(int id, Player owner) {
     }
 }
 
+// Returns 1 if position movement is horizontal
 int Board::checkValidRow(Position start, Position end) const {
     int moveToRight = 0;
     if(start.y < end.y){
@@ -105,6 +106,7 @@ int Board::checkValidRow(Position start, Position end) const {
     return 1;
 }
 
+// Returns 1 if position movement is vertical
 int Board::checkValidCol(Position start, Position end) const {
     int moveUp = 0;
     if(start.x < end.x){
@@ -130,6 +132,8 @@ int Board::checkValidCol(Position start, Position end) const {
     }
     return 1;
 }
+
+// Returns 1 if position movement is diagonal
 int Board::checkValidDia(Position start, Position end) const {
     int right = 0;
     if(start.x < end.x){
@@ -178,17 +182,7 @@ int Board::checkValidDia(Position start, Position end) const {
     return 1;
 }
 
-int Board::gameOptions(){
-    int input = 0;
-    while(input != 1 && input != 2){
-        Prompts::menu();
-        std::cin >> input;
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-    return input;
-}
-
+//Promotes the pawn to a queen if it reaches the end of the board
 void Board::promote(Position end) {
     if(Board::getPiece(end)->owner() == 0) {
         if(end.y == 7){
@@ -202,6 +196,19 @@ void Board::promote(Position end) {
     }
 }
 
+//Returns input of 1 or 2 which are the game options
+int Board::gameOptions(){
+    int input = 0;
+    while(input != 1 && input != 2){
+        Prompts::menu();
+        std::cin >> input;
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+    return input;
+}
+
+//Saves the game in the correct format
 void Board::saveGame() const{
     std::string fileName;
     Prompts::saveGame();
@@ -228,7 +235,7 @@ void Board::saveGame() const{
     else Prompts::saveGame();
 }
 
-
+//Prints the chessboard
 void Board::printAllPieces() const{
     //std::cout<<i<<" "<<j<<std::endl;
     for(int i = 7; i >= 0; i--){
