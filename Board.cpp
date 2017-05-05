@@ -878,7 +878,7 @@ void Board::run() {
                     Prompts::blocked();
                 }
                 else if(mm == 3){
-                    Prompts::capture(Player((m_turn+1)%2));
+                    Prompts::capture(Player(m_turn%2));
                 }
                 else if(mm == -1){
                     Prompts::illegalMove();

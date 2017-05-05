@@ -122,6 +122,10 @@ public:
     int checkMovesBishop(Position start);
     int checkMovesQueen(Position start);
 
+    bool checkMoveRow(Position start, Position end) const;
+    bool checkMoveCol(Position start, Position end) const;
+    bool checkMoveDia(Position start, Position end) const;
+
 
 protected:
     // All the factories registered with this Board

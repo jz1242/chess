@@ -45,21 +45,21 @@ int ChessGame::makeMove(Position start, Position end) {
     return retCode;
 }
 
-bool checkMoveRow(Position start, Position end){
+bool Board::checkMoveRow(Position start, Position end) const{
     if(start.x != end.x){
         return false;
     }
     return true;
 }
 
-bool checkMoveCol(Position start, Position end){
+bool Board::checkMoveCol(Position start, Position end) const{
     if(start.y != end.y){
         return false;
     }
     return true;
 }
 
-bool checkMoveDia(Position start, Position end){
+bool Board::checkMoveDia(Position start, Position end) const{
     int checkX = (int)start.x - (int)end.x;
     int checkY = (int)start.y - (int)end.y;
     if(abs(checkY) == abs(checkX)) {
@@ -73,37 +73,37 @@ int Pawn::validMove(Position start, Position end,
     const Board& board) const {
     if(board.Board::getPiece(start)->owner() == WHITE){
         if(end.x == start.x && end.y == start.y + 2 && start.y == 1){
-                if(board.Board::getPiece(end) != nullptr){
-                    return 0;
-                }
-                if(!(board.Board::checkValidRow(start, end))){
-                    return 0;
-                }
-            }
-            else if(end.x == start.x && end.y == start.y + 1){
-
-                if(board.Board::getPiece(end) != nullptr){
-
-                    return 0;
-                }
-                if(!(board.Board::checkValidRow(start, end))){
-
-                    return 0;
-                }
-            }
-            else if(end.x == start.x + 1 && end.y == start.y + 1){
-                if(board.Board::getPiece(end) == nullptr){
-                    return 0;
-                }
-            }
-            else if(end.x == start.x - 1 && end.y == start.y + 1){
-                if(board.Board::getPiece(end) == nullptr){
-                    return 0;
-                }
-            }
-            else{
+            if(board.Board::getPiece(end) != nullptr){
                 return 0;
             }
+            if(!(board.Board::checkValidRow(start, end))){
+                return 0;
+            }
+        }
+        else if(end.x == start.x && end.y == start.y + 1){
+
+            if(board.Board::getPiece(end) != nullptr){
+
+                return 0;
+            }
+            if(!(board.Board::checkValidRow(start, end))){
+
+                return 0;
+            }
+        }
+        else if(end.x == start.x + 1 && end.y == start.y + 1){
+            if(board.Board::getPiece(end) == nullptr){
+                return 0;
+            }
+        }
+        else if(end.x == start.x - 1 && end.y == start.y + 1){
+            if(board.Board::getPiece(end) == nullptr){
+                return 0;
+            }
+        }
+        else{
+            return 0;
+        }
     }
     else{
         if(end.x == start.x && end.y == start.y - 2 && start.y == 6){
@@ -141,12 +141,12 @@ int Pawn::validMove(Position start, Position end,
 
 int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
-    if(checkMoveRow(start, end)) {
+    if(board.Board::checkMoveRow(start, end)) {
         if (!(board.Board::checkValidRow(start, end))) {
             return 0;
         }
     } 
-    else if (checkMoveCol(start, end)) {
+    else if (board.Board::checkMoveCol(start, end)) {
         if(!(board.Board::checkValidCol(start, end))) {
             return 0;
         }   
@@ -173,7 +173,7 @@ int Knight::validMove(Position start, Position end,
 
 int Bishop::validMove(Position start, Position end,
         const Board& board) const {
-   if(!(checkMoveDia(start, end) && board.Board::checkValidDia(start, end))){
+   if(!(board.Board::checkMoveDia(start, end) && board.Board::checkValidDia(start, end))){
         return 0;
     }
     return SUCCESS; 
@@ -181,18 +181,18 @@ int Bishop::validMove(Position start, Position end,
 
 int Queen::validMove(Position start, Position end,
         const Board& board) const { 
-    if(checkMoveDia(start, end)){
+    if(board.Board::checkMoveDia(start, end)){
         if(!board.Board::checkValidDia(start, end)){
             
             return 0;
         }
     }
-    else if(checkMoveRow(start, end)) {
+    else if(board.Board::checkMoveRow(start, end)) {
         if (!board.Board::checkValidRow(start, end)) {
             return 0;
         }
     } 
-    else if (checkMoveCol(start, end)) {
+    else if (board.Board::checkMoveCol(start, end)) {
         if(!board.Board::checkValidCol(start, end)) {
             return 0;
         }   
@@ -233,6 +233,7 @@ void ChessGame::setupBoard() {
     }
 }
 
+//Loads a game of specified format
 bool ChessGame::loadGame() {
     Prompts::loadGame();
     std::string fileNameInput;
