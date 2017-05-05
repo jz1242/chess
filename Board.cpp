@@ -1,6 +1,7 @@
 #include <assert.h>
 #include <cctype>
 #include <iostream>
+#include <limits>
 
 #include "Game.h"
 #include "Prompts.h"
