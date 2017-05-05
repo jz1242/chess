@@ -30,7 +30,7 @@ int ChessGame::makeMove(Position start, Position end) {
                 Prompts::capture(playerTurn());
             }
             retCode = Board::makeMove(start, end);
-            if(a->id() == 0){
+            if(a->id() == 3){
                 Board::promote(end);
             }
         }
@@ -212,6 +212,10 @@ int King::validMove(Position start, Position end,
         )){
         return 0;
     }
+    if(board.Board::checkKing(*this, end) == 0){
+        return 0;
+    }
+
     return SUCCESS; 
 }
 
@@ -225,7 +229,7 @@ void ChessGame::setupBoard() {
         initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
     }
 }
 

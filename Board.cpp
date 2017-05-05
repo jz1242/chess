@@ -269,3 +269,206 @@ void Board::printAllPieces() const{
     }
 }
 
+int Board::checkKing(Piece king, Position end) const{
+    int i = end.x + 1;
+    int j = end.y + 1;
+    Piece *a;
+    while(i <= 7 && j <= 7 && a == nullptr){
+        a = Board::getPiece(Position(i,j));
+        i++;
+        j++;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
+            if(a->id() == 0){
+                if(Board::getPiece(Position(end.x+1,end.y+1))){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
+
+        }
+    }
+    i = end.x - 1;
+    j = end.y + 1;
+    a = nullptr;
+   while(i >= 0 && j <= 7 && a == nullptr){
+        a = Board::getPiece(Position(i,j));
+        i--;
+        j++;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
+            if(a->id() == 0){
+                if(Board::getPiece(Position(end.x-1,end.y+1))){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
+
+        }
+    }
+
+    i = end.x + 1;
+    j = end.y - 1;
+    a = nullptr;
+   while(i <= 7 && j >= 0 && a == nullptr){
+        a = Board::getPiece(Position(i,j));
+        i++;
+        j--;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
+            if(a->id() == 0){
+                if(Board::getPiece(Position(end.x+1,end.y-1))){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
+
+        }
+    }
+
+    i = end.x - 1;
+    j = end.y - 1;
+    a = nullptr;
+    while(i >= 0 && j >= 0 && a == nullptr){
+        a = Board::getPiece(Position(i,j));
+        i--;
+        j--;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
+            if(a->id() == 0){
+                if(Board::getPiece(Position(end.x-1,end.y-1))){
+                    return 0;
+                }
+            }
+            else{
+                return 0;
+            }
+
+        }
+    }
+    i = end.x + 1;
+    a = nullptr;
+    while(i <= 7 && a == nullptr){
+        a = Board::getPiece(Position(i,end.y));
+        i++;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
+            return 0;
+        }
+    }
+
+    i = end.x - 1;
+    a = nullptr;
+    while(i >= 0 && a == nullptr){
+        a = Board::getPiece(Position(i,end.y));
+        i--;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
+            return 0;
+        }
+    }
+
+    i = end.y + 1;
+    a = nullptr;
+    while(i <= 7 && a == nullptr){
+        a = Board::getPiece(Position(end.x,i));
+        i++;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
+            return 0;
+        }
+    }
+
+    i = end.y - 1;
+    a = nullptr;
+    while(i >= 0 && a == nullptr){
+        a = Board::getPiece(Position(end.x,i));
+        i--;
+    }
+    if(!(a == nullptr)){
+        if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
+            return 0;
+        }
+    }
+    int x = end.x;
+    int y = end.y;
+
+    if(y + 2 <=7 && x + 1 <=7 && Board::getPiece(Position(end.x + 1, end.y + 2)) != nullptr && Board::getPiece(Position(end.x + 1, end.y + 2))->id() == 2 && Board::getPiece(Position(end.x + 1, end.y + 2))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y + 2 <=7 && x - 1 >= 0 && Board::getPiece(Position(end.x - 1, end.y + 2))!= nullptr && Board::getPiece(Position(end.x - 1, end.y + 2))->id() == 2 && Board::getPiece(Position(end.x - 1, end.y + 2))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y - 2 >=0 && x + 1 <= 7 && Board::getPiece(Position(end.x + 1, end.y - 2))!= nullptr && Board::getPiece(Position(end.x + 1, end.y - 2))->id() == 2 && Board::getPiece(Position(end.x + 1, end.y - 2))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y - 2 >= 0 && x - 1 >= 0 && Board::getPiece(Position(end.x - 1, end.y - 2))!= nullptr && Board::getPiece(Position(end.x - 1, end.y - 2))->id() == 2 && Board::getPiece(Position(end.x - 1, end.y - 2))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y + 1 <=7 && x + 2 <= 7 && Board::getPiece(Position(end.x + 2, end.y + 1))!= nullptr && Board::getPiece(Position(end.x + 2, end.y + 1))->id() == 2 && Board::getPiece(Position(end.x + 2, end.y + 1))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y + 1 <=7 && x - 2 >= 0 && Board::getPiece(Position(end.x - 2, end.y + 1))!= nullptr && Board::getPiece(Position(end.x - 2, end.y + 1))->id() == 2 && Board::getPiece(Position(end.x - 2, end.y + 1))->owner() != king.owner()){
+        return 0;
+    }
+    if(y - 1 >= 0 && x + 2 <=7 && Board::getPiece(Position(end.x + 2, end.y - 1))!= nullptr && Board::getPiece(Position(end.x + 2, end.y - 1))->id() == 2 && Board::getPiece(Position(end.x + 2, end.y - 1))->owner() != king.owner()){
+
+        return 0;
+    }
+    if(y - 1 >= 0 && x -2 >= 0 && Board::getPiece(Position(end.x - 2, end.y - 1))!= nullptr && Board::getPiece(Position(end.x - 2, end.y - 1))->id() == 2 && Board::getPiece(Position(end.x - 2, end.y - 1))->owner() != king.owner()){
+
+        return 0;
+    }
+    return 1;
+}
+int Board::inCheck(){
+    Piece* kw;
+    Piece* kb;
+    Position kbs;
+    Position kws;
+    for(int i = 0; i <=7; i++){
+        for(int j = 0; j<=7; j++){
+            if(Board::getPiece(Position(i, j)) != nullptr){
+                if(Board::getPiece(Position(i, j)) -> id() == 5){
+                    if(Board::getPiece(Position(i, j)) ->owner() == BLACK){
+                        kw = Board::getPiece(Position(i, j));
+                        kws = Position(i, j);
+                    }
+                    else{
+                        kb = Board::getPiece(Position(i, j));
+                        kbs = Position(i, j);
+                    }
+                }
+            }
+
+        }
+    }
+
+    if(Board::checkKing(*kw, kws) == 0){
+        Prompts::check(BLACK);
+        return 1;
+    }
+    else if(Board::checkKing(*kb, kbs) == 0){
+        Prompts::check(WHITE);
+    }
+    return -1;
+
+}
