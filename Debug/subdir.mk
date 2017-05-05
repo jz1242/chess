@@ -12,7 +12,8 @@ CPP_SRCS += \
 
 O_SRCS += \
 ../Board.o \
-../Chess.o 
+../Chess.o \
+../main.o 
 
 OBJS += \
 ./Board.o \

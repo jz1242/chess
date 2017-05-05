@@ -265,11 +265,7 @@ void Board::printAllPieces() const{
 int Board::checkKing(Piece king, Position end) const{
     int i = end.x + 1;
     int j = end.y + 1;
-<<<<<<< HEAD
     Piece *a = nullptr;
-=======
-    Piece *a;
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
     while(i <= 7 && j <= 7 && a == nullptr){
         a = Board::getPiece(Position(i,j));
         i++;
@@ -278,12 +274,8 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-<<<<<<< HEAD
                 if(Board::getPiece(Position(end.x+1,end.y+1)) == a){
 
-=======
-                if(Board::getPiece(Position(end.x+1,end.y+1))){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
                     return 0;
                 }
             }
@@ -304,11 +296,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-<<<<<<< HEAD
                 if(Board::getPiece(Position(end.x-1,end.y+1)) == a){
-=======
-                if(Board::getPiece(Position(end.x-1,end.y+1))){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
                     return 0;
                 }
             }
@@ -330,11 +318,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-<<<<<<< HEAD
                 if(Board::getPiece(Position(end.x+1,end.y-1)) == a){
-=======
-                if(Board::getPiece(Position(end.x+1,end.y-1))){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
                     return 0;
                 }
             }
@@ -356,11 +340,7 @@ int Board::checkKing(Piece king, Position end) const{
     if(!(a == nullptr)){
         if((a->id() == 3 || a->id() == 4 || a->id() == 0) && a->owner() != king.owner()){
             if(a->id() == 0){
-<<<<<<< HEAD
                 if(Board::getPiece(Position(end.x-1,end.y-1)) == a){
-=======
-                if(Board::getPiece(Position(end.x-1,end.y-1))){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
                     return 0;
                 }
             }
@@ -412,11 +392,7 @@ int Board::checkKing(Piece king, Position end) const{
         a = Board::getPiece(Position(end.x,i));
         i--;
     }
-<<<<<<< HEAD
     if(a != nullptr){
-=======
-    if(!(a == nullptr)){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
         if((a->id() == 1 || a->id() == 4) && a->owner() != king.owner()){
             return 0;
         }
@@ -466,11 +442,7 @@ int Board::inCheck(){
         for(int j = 0; j<=7; j++){
             if(Board::getPiece(Position(i, j)) != nullptr){
                 if(Board::getPiece(Position(i, j)) -> id() == 5){
-<<<<<<< HEAD
                     if(Board::getPiece(Position(i, j)) ->owner() == WHITE){
-=======
-                    if(Board::getPiece(Position(i, j)) ->owner() == BLACK){
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
                         kw = Board::getPiece(Position(i, j));
                         kws = Position(i, j);
                     }
@@ -485,7 +457,6 @@ int Board::inCheck(){
     }
 
     if(Board::checkKing(*kw, kws) == 0){
-<<<<<<< HEAD
         if(Board::checkMovesKing(kws) > 0){
             Prompts::check(BLACK);
         }
@@ -504,18 +475,10 @@ int Board::inCheck(){
             Prompts::checkMate(WHITE);
         }
         return 1;
-=======
-        Prompts::check(BLACK);
-        return 1;
-    }
-    else if(Board::checkKing(*kb, kbs) == 0){
-        Prompts::check(WHITE);
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
     }
     return -1;
 
 }
-<<<<<<< HEAD
 int Board::checkMovesKing(Position start){
     int tot = 0;
     Piece* k = Board::getPiece(start);
@@ -874,8 +837,6 @@ int Board::checkMovesQueen(Position start){
     return ret;
 
 }
-=======
->>>>>>> ebae63b7c3e52a21ee5691da10697c0fd7abba18
 
 bool checkValidPos(std::string input){
     if(input.length() != 2){
