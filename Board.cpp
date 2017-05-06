@@ -96,7 +96,7 @@ int Board::checkValidCol(Position start, Position end) const {
         }
     }
     else {
-        for(int i = start.y - 1; i >= end.y && i >= 0; i--){
+        for(int i = (int)start.y - 1; i >= (int)end.y && i >= 0; i--){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
                 if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
                     return 0;
@@ -123,7 +123,7 @@ int Board::checkValidRow(Position start, Position end) const {
         }
     }
     else {
-        for(unsigned int i = start.x + 1; i >= end.x; i--){
+        for(int i = (int)start.x - 1; i >= (int)end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
                     return 0;

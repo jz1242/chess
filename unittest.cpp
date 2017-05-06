@@ -121,22 +121,34 @@ bool checkDia(){
 
 bool checkPawnW(){
 	ChessGame chess;
-	chess.initPiece(PAWN_ENUM, WHITE, Position(1, 1));
-	if(chess.ChessGame::makeMove(Position(1,1), Position(2,2)) >= 0){
+	Position start = Position(4,4);
+	chess.initPiece(PAWN_ENUM, WHITE, start);
+	Piece* p = chess.Board::getPiece(start);
+	if(p->validMove(start, Position(5,5), chess)){
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(2,1)) >= 0){
+	if(p->validMove(start, Position(5,4), chess)){
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(2,0)) >= 0){
+	if(p->validMove(start, Position(5,3), chess)){
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(1,0)) >= 0){
+	if(p->validMove(start, Position(4,3), chess)){
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(0,0)) >= 0){
+	if(p->validMove(start, Position(3,3), chess)){
 		return false;
 	}
+	if(p->validMove(start, Position(3,4), chess)){
+		return false;
+	}
+	if(p->validMove(start, Position(3,5), chess)){
+		return false;
+	}
+	if(!p->validMove(start, Position(4,5), chess)){
+		return false;
+	}
+	/*
 	if(chess.ChessGame::makeMove(Position(1,1), Position(0,1)) >= 0){
 		return false;
 	}
@@ -145,7 +157,7 @@ bool checkPawnW(){
 	}
 	if(chess.ChessGame::makeMove(Position(1,1), Position(1,2)) != 0){
 		return false;
-	}
+	}*/
 	return true;
 }
 
@@ -193,7 +205,7 @@ bool checkRookW(){
 	ChessGame chess;
 	Position start = Position(4,4);
 	chess.initPiece(ROOK_ENUM, WHITE, start);
-	Piece* p = chess.Board::getPiece(start);/*
+	Piece* p = chess.Board::getPiece(start);
 	if(p->validMove(start, Position(5,5), chess)){
 		std::cout << "here 1";
 		return false;
@@ -213,20 +225,20 @@ bool checkRookW(){
 	if(!p->validMove(start, Position(6,4), chess)){
 		std::cout << "here 2";
 		return false;
-	}*/
+	}/*
 	std::cout << (p->validMove(Position(6,4), start, chess));
 	if(!(p->validMove(Position(6,4), start, chess))){
 		std::cout << "here 3";
 		return false;
-	}
+	}*/
 	if(!(p->validMove(start, Position(4,2), chess))){
 		std::cout << "here 4";
 		return false;
-	}
+	}/*
 	if(!p->validMove(Position(4,2), start, chess)){
 		std::cout << "here 2";
 		return false;
-	}
+	}*/
 	return true;
 }
 
