@@ -46,17 +46,23 @@ int ChessGame::makeMove(Position start, Position end) {
 }
 
 bool Board::checkMoveRow(Position start, Position end) const{
-    if(start.x == end.x){
-        return false;
+    if(start.y == end.y){
+        if(start.x == end.x){
+            return false;
+        }
+        return true;
     }
-    return true;
+    return false;
 }
 
 bool Board::checkMoveCol(Position start, Position end) const{
-    if(start.y == end.y){
-        return false;
+    if(start.x == end.x){
+        if(start.y == end.y){
+            return false;
+        }
+        return true;
     }
-    return true;
+    return false;
 }
 
 bool Board::checkMoveDia(Position start, Position end) const{
@@ -142,16 +148,15 @@ int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
     if(board.Board::checkMoveRow(start, end)) {
         if (!(board.Board::checkValidRow(start, end))) {
+            std::cout << "hi ";
             return 0;
         }
-
     } 
     else if (board.Board::checkMoveCol(start, end)) {
         if(!(board.Board::checkValidCol(start, end))) {
+            std::cout << "w ";
             return 0;
         }
-
-
     }
     else {
         return 0;

@@ -82,11 +82,11 @@ Piece* Board::newPiece(int id, Player owner) {
 
 // Returns 1 if position movement is horizontal
 int Board::checkValidCol(Position start, Position end) const {
-    int moveToRight = 0;
+    int moveUp = 0;
     if(start.y < end.y){
-        moveToRight  = 1;
+        moveUp  = 1;
     }
-    if(moveToRight) {
+    if(moveUp) {
         for(unsigned int i = start.y+1; i <= end.y; i++){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
                 if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
@@ -109,23 +109,25 @@ int Board::checkValidCol(Position start, Position end) const {
 
 // Returns 1 if position movement is vertical
 int Board::checkValidRow(Position start, Position end) const {
-    int moveUp = 0;
+    int moveToRight = 0;
     if(start.x < end.x){
-        moveUp = 1;
+        moveToRight = 1;
     }
-    if(moveUp) {
+    if(moveToRight) {
         for(unsigned int i = start.x+1; i <= end.x; i++){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
+                    std::cout << "a";
                     return 0;
                 }
             }
         }
     }
     else {
-        for(int i = start.x - 1; i >= end.x; i--){
+        for(unsigned int i = start.x + 1; i >= end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
+                    std::cout << "b";
                     return 0;
                 }
             }
@@ -249,7 +251,12 @@ void Board::printAllPieces() const{
                 Terminal::colorBg(Terminal::BLACK);
             }
             if(!(a == nullptr)){
-                Terminal::colorFg(false, Terminal::CYAN);
+                if(a->owner() == BLACK){
+                    Terminal::colorFg(false, Terminal::CYAN);
+                }
+                else{
+                    Terminal::colorFg(false, Terminal::RED);
+                }
                 std::cout<<a->id()<<" ";
             }
             else{
@@ -985,7 +992,8 @@ void Board::run() {
                     Prompts::blocked();
                 }
                 else if(mm == 3){
-                    Prompts::capture(Player(m_turn%2));
+                    Prompts::capture(Player((m_turn+1)%2));
+                    m_turn++;
                 }
                 else if(mm == -1){
                     Prompts::illegalMove();
@@ -993,37 +1001,23 @@ void Board::run() {
                 else{
                     m_turn++;
                 }
-
-
                 int check = inCheck();
                 if(check == 1 && playerTurn() == WHITE){
-
                     if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE)){
-
                         Prompts::check(BLACK);
                     }
                     else{
-
                         Prompts::checkMate(BLACK);
                     }
-
                 }
                else if(check == 2 && playerTurn() == BLACK){
-
                     if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
-
                         Prompts::check(WHITE);
                     }
                     else{
-
                         Prompts::checkMate(WHITE);
                     }
-
                 }
-
-
-
-
                 if(printBoard){
                     printAllPieces();    
                 }
@@ -1034,8 +1028,6 @@ void Board::run() {
         }
             Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
             std::cin >> start;
-
-
     }
     if(start == "save"){
         Board::saveGame();

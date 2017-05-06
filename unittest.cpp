@@ -8,16 +8,44 @@
 
 bool checkRow(){
 	ChessGame chess;
-	if(chess.Board::checkMoveRow(Position(1,2), Position(2,3))){
+	if(chess.Board::checkMoveRow(Position(4,4), Position(5,5))){
+		std::cout << "here 1";
 		return false;
 	}
-	if(chess.Board::checkMoveRow(Position(1,2), Position(2,2))){
+	if(chess.Board::checkMoveRow(Position(4,4), Position(4,4))){
+		std::cout << "here 2";
 		return false;
 	}
-	if(!chess.Board::checkMoveRow(Position(2,2), Position(2,3))){
+	if(chess.Board::checkMoveRow(Position(4,4), Position(5,3))){
+		std::cout << "here 3";
 		return false;
 	}
-	if(!chess.Board::checkMoveRow(Position(2,3), Position(2,3))){
+	if(chess.Board::checkMoveRow(Position(4,4), Position(4,3))){
+		std::cout << "here 4";
+		return false;
+	}
+	if(chess.Board::checkMoveRow(Position(4,4), Position(3,3))){
+		std::cout << "here 5";
+		return false;
+	}
+	if(!chess.Board::checkMoveRow(Position(4,4), Position(3,4))){
+		std::cout << "here 6";
+		return false;
+	}
+	if(chess.Board::checkMoveRow(Position(4,4), Position(3,5))){
+		std::cout << "here 7";
+		return false;
+	}
+	if(chess.Board::checkMoveRow(Position(4,4), Position(4,5))){
+		std::cout << "here 8";
+		return false;
+	}
+	if(!chess.Board::checkMoveRow(Position(4,4), Position(5,4))){
+		std::cout << "here 9";
+		return false;
+	}
+	if(!chess.Board::checkMoveRow(Position(5,4), Position(4,4))){
+		std::cout << "here 10";
 		return false;
 	}
 	return true;
@@ -25,20 +53,45 @@ bool checkRow(){
 
 bool checkCol(){
 	ChessGame chess;
-	if(chess.Board::checkMoveCol(Position(1,2), Position(2,3))){
+	if(chess.Board::checkMoveCol(Position(4,4), Position(5,5))){
+		std::cout << "here 1";
 		return false;
 	}
-	if(!chess.Board::checkMoveCol(Position(1,2), Position(2,2))){
+	if(chess.Board::checkMoveCol(Position(4,4), Position(4,4))){
+		std::cout << "here 2";
 		return false;
 	}
-	if(chess.Board::checkMoveCol(Position(2,2), Position(2,3))){
+	if(chess.Board::checkMoveCol(Position(4,4), Position(5,4))){
+		std::cout << "here 9";
 		return false;
 	}
-	if(!chess.Board::checkMoveCol(Position(2,3), Position(2,3))){
+	if(chess.Board::checkMoveCol(Position(4,4), Position(5,3))){
+		std::cout << "here 3";
+		return false;
+	}
+	if(chess.Board::checkMoveCol(Position(4,4), Position(3,3))){
+		std::cout << "here 5";
+		return false;
+	}
+	if(chess.Board::checkMoveCol(Position(4,4), Position(3,4))){
+		std::cout << "here 6";
+		return false;
+	}
+	if(chess.Board::checkMoveCol(Position(4,4), Position(3,5))){
+		std::cout << "here 7";
+		return false;
+	}
+	if(!chess.Board::checkMoveCol(Position(4,4), Position(4,3))){
+		std::cout << "here 4";
+		return false;
+	}
+	if(!chess.Board::checkMoveCol(Position(4,3), Position(4,4))){
+		std::cout << "here 4";
 		return false;
 	}
 	return true;
 }
+
 
 bool checkDia(){
 	ChessGame chess;
@@ -98,37 +151,39 @@ bool checkPawnW(){
 
 bool checkPawnB(){
 	ChessGame chess;
-	chess.initPiece(PAWN_ENUM, BLACK, Position(6, 6));
-	chess.printAllPieces();
-	std::cout << std::endl;
-	if(chess.ChessGame::makeMove(Position(6,6), Position(7,7)) >= 0){
+	Position start = Position(4,4);
+	chess.initPiece(PAWN_ENUM, BLACK, start);
+	Piece* p = chess.Board::getPiece(start);
+	if(p->validMove(start, Position(5,5), chess)){
+		std::cout << "here 1";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(7,6)) >= 0){
+	if(p->validMove(start, Position(5,4), chess)){
+		std::cout << "here 2";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(7,5)) >= 0){
+	if(p->validMove(start, Position(5,3), chess)){
+		std::cout << "here 3";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(5,5)) >= 0){
+	if(p->validMove(start, Position(3,3), chess)){
+		std::cout << "here 5";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(5,6)) >= 0){
+	if(p->validMove(start, Position(3,4), chess)){
+		std::cout << "here 6";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(5,7)) >= 0){
+	if(p->validMove(start, Position(3,5), chess)){
+		std::cout << "here 7";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(6,6), Position(6,7)) >= 0){
+	if(p->validMove(start, Position(4,5), chess)){
+		std::cout << "here 8";
 		return false;
 	}
-	chess.printAllPieces();
-	std::cout << "turn" << chess.turn();
-	std::cout << chess.ChessGame::makeMove(Position(6,6), Position(6,5)) << std::endl;
-	std::cout << chess.ChessGame::makeMove(Position(6,6), Position(6,5)) << std::endl;
-	if(chess.ChessGame::makeMove(Position(6,6), Position(6,5)) != 0){
-		chess.printAllPieces();
-		std::cout << "8";
+	if(!(p->validMove(start, Position(4,3), chess))){
+		std::cout << "here 4";
 		return false;
 	}
 	return true;
@@ -136,44 +191,42 @@ bool checkPawnB(){
 
 bool checkRookW(){
 	ChessGame chess;
-	chess.initPiece(ROOK_ENUM, WHITE, Position(1, 1));
-	chess.printAllPieces();
-	std::cout << std::endl;
-	if(chess.ChessGame::makeMove(Position(1,1), Position(2,2)) >= 0){
-		std::cout << "1" << std::endl;
+	Position start = Position(4,4);
+	chess.initPiece(ROOK_ENUM, WHITE, start);
+	Piece* p = chess.Board::getPiece(start);/*
+	if(p->validMove(start, Position(5,5), chess)){
+		std::cout << "here 1";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(0,0)) >= 0){
-		std::cout << "2" << std::endl;
+	if(p->validMove(start, Position(5,3), chess)){
+		std::cout << "here 5";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(0,2)) >= 0){
-		std::cout << "3" << std::endl;
+	if(p->validMove(start, Position(3,3), chess)){
+		std::cout << "here 7";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(2,0)) >= 0){
-		std::cout << "4" << std::endl;
+	if(p->validMove(start, Position(3,5), chess)){
+		std::cout << "here 8";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(7,1)) != 0){
-		std::cout << "5" << std::endl;
+	if(!p->validMove(start, Position(6,4), chess)){
+		std::cout << "here 2";
+		return false;
+	}*/
+	std::cout << (p->validMove(Position(6,4), start, chess));
+	if(!(p->validMove(Position(6,4), start, chess))){
+		std::cout << "here 3";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(7,1), Position(0,1)) != 0){
-		std::cout << chess.ChessGame::makeMove(Position(7,1), Position(0,1));
-		chess.printAllPieces();
-		std::cout << "6" << std::endl;
+	if(!(p->validMove(start, Position(4,2), chess))){
+		std::cout << "here 4";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(0,1), Position(0,7)) != 0){
-		std::cout << "7" << std::endl;
+	if(!p->validMove(Position(4,2), start, chess)){
+		std::cout << "here 2";
 		return false;
 	}
-	if(chess.ChessGame::makeMove(Position(0,7), Position(0,0)) != 0){
-		std::cout << "8" << std::endl;
-		return false;
-	}
-	chess.printAllPieces();
 	return true;
 }
 
@@ -190,9 +243,9 @@ int main() {
 	if(!checkPawnW()){
 		std::cout << "Pawn::validMove() on White failed" << std::endl;	
 	}
-	/*if(!checkPawnB()){
+	if(!checkPawnB()){
 		std::cout << "Pawn::validMove() on Black failed" << std::endl;	
-	}*/
+	}
 	if(!checkRookW()){
 		std::cout << "Rook::validMove() on White failed" << std::endl;	
 	}
