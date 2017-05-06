@@ -502,7 +502,7 @@ int Board::checkMovesKing(Player pl){
             tot += Board::checkKing(*k, Position(i-1, j+1));
         }
     }
- /*   if(i + 1 <= 7 && j - 1 >= 0){
+    if(i + 1 <= 7 && j - 1 >= 0){
         k = Board::getPiece(start);
         if(k->validMove(start, Position(i+1, j-1), *this)){
             tot += Board::checkKing(*k, Position(i+1, j-1));
@@ -538,7 +538,7 @@ int Board::checkMovesKing(Player pl){
         if(k->validMove(start, Position(i, j-1), *this)){
             tot += Board::checkKing(*k, Position(i, j-1));
         }
-    }*/
+    }
     return tot;
 }
 int Board::checkMovesOtherPieces(Player pl){

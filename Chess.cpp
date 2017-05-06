@@ -226,12 +226,12 @@ int Queen::validMove(Position start, Position end,
             return 0;
         }
     }
-    if(board.Board::checkMoveRow(start, end)) {
+    else if(board.Board::checkMoveRow(start, end)) {
         if (!board.Board::checkValidRow(start, end)) {
             return 0;
         }
     } 
-    if (board.Board::checkMoveCol(start, end)) {
+    else if (board.Board::checkMoveCol(start, end)) {
         if(!board.Board::checkValidCol(start, end)) {
             return 0;
         }
