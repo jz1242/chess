@@ -181,13 +181,11 @@ int Rook::validMove(Position start, Position end,
         const Board& board) const{ 
     if(board.Board::checkMoveRow(start, end)) {
         if (!(board.Board::checkValidRow(start, end))) {
-            std::cout << "hi ";
             return 0;
         }
     } 
     else if (board.Board::checkMoveCol(start, end)) {
         if(!(board.Board::checkValidCol(start, end))) {
-            std::cout << "w ";
             return 0;
         }
     }

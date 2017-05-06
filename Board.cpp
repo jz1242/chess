@@ -117,7 +117,6 @@ int Board::checkValidRow(Position start, Position end) const {
         for(unsigned int i = start.x+1; i <= end.x; i++){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
-                    std::cout << "a";
                     return 0;
                 }
             }
@@ -127,7 +126,6 @@ int Board::checkValidRow(Position start, Position end) const {
         for(unsigned int i = start.x + 1; i >= end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
-                    std::cout << "b";
                     return 0;
                 }
             }
@@ -975,7 +973,6 @@ bool checkValidPos(std::string input){
 }
 
 void Board::run() {
-    
     std::string start;
     std::string end;
     Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
@@ -1010,9 +1007,8 @@ void Board::run() {
                     Prompts::blocked();
                 }
                 else if(mm == 3){
-                    Prompts::capture(Player((m_turn+1)%2));
-                    m_turn++;
                     runRest = true;
+                    Prompts::capture(Player((m_turn+1)%2));
                 }
                 else if(mm == -1){
                     Prompts::illegalMove();
@@ -1020,26 +1016,6 @@ void Board::run() {
                 else if(mm == -2){
                     Prompts::cantExposeCheck();
                 }
-                int check = inCheck();
-                if(check == 1 && playerTurn() == WHITE){
-                    if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE)){
-                        Prompts::check(BLACK);
-                    }
-                    else{
-                        Prompts::checkMate(BLACK);
-                    }
-                }
-               else if(check == 2 && playerTurn() == BLACK){
-                    if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
-                        Prompts::check(WHITE);
-                    }
-                    else{
-                        Prompts::checkMate(WHITE);
-                    }
-                }
-                if(printBoard){
-                    printAllPieces();    
-=======
                 else if(mm == -3){
                     Prompts::mustHandleCheck();
                 }
@@ -1085,7 +1061,6 @@ void Board::run() {
                    }
 
 
->>>>>>> 9d30c2f78a0141d2c9d6a9a6c9877f26248cc3f6
                 }
             }
             else{
@@ -1098,6 +1073,8 @@ void Board::run() {
 
             Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
             std::cin >> start;
+
+
     }
     if(start == "save"){
         Board::saveGame();
