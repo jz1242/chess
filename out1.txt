@@ -10,3 +10,4769 @@ Black turn 4:
 Black captures a piece.
 White turn 5:
 Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
+Enter a file to save to:
+Error: couldn't parse your move.
+White turn 5:
