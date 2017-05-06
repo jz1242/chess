@@ -148,16 +148,6 @@ bool checkPawnW(){
 	if(!p->validMove(start, Position(4,5), chess)){
 		return false;
 	}
-	/*
-	if(chess.ChessGame::makeMove(Position(1,1), Position(0,1)) >= 0){
-		return false;
-	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(0,2)) >= 0){
-		return false;
-	}
-	if(chess.ChessGame::makeMove(Position(1,1), Position(1,2)) != 0){
-		return false;
-	}*/
 	return true;
 }
 
@@ -236,9 +226,49 @@ bool checkRookW(){
 		return false;
 	}/*
 	if(!p->validMove(Position(4,2), start, chess)){
-		std::cout << "here 2";
+		std::cout << "here 5";
 		return false;
 	}*/
+	return true;
+}
+
+bool checkRookB(){
+	ChessGame chess;
+	Position start = Position(4,4);
+	chess.initPiece(ROOK_ENUM, BLACK, start);
+	Piece* p = chess.Board::getPiece(start);
+	if(p->validMove(start, Position(5,5), chess)){
+		std::cout << "here 1";
+		return false;
+	}
+	if(p->validMove(start, Position(5,3), chess)){
+		std::cout << "here 5";
+		return false;
+	}
+	if(p->validMove(start, Position(3,3), chess)){
+		std::cout << "here 7";
+		return false;
+	}
+	if(p->validMove(start, Position(3,5), chess)){
+		std::cout << "here 8";
+		return false;
+	}
+	if(!p->validMove(start, Position(6,4), chess)){
+		std::cout << "here 2";
+		return false;
+	}
+	if(!(p->validMove(Position(6,4), start, chess))){
+		std::cout << "here 3";
+		return false;
+	}
+	if(!(p->validMove(start, Position(4,2), chess))){
+		std::cout << "here 4";
+		return false;
+	}
+	if(!p->validMove(Position(4,2), start, chess)){
+		std::cout << "here 5";
+		return false;
+	}
 	return true;
 }
 
@@ -260,6 +290,9 @@ int main() {
 	}
 	if(!checkRookW()){
 		std::cout << "Rook::validMove() on White failed" << std::endl;	
+	}
+	if(!checkRookB()){
+		std::cout << "Rook::validMove() on Black failed" << std::endl;	
 	}
 	else{
 		std::cout <<"Passed all unit tests" << std::endl;
