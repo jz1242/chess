@@ -2,6 +2,7 @@
 #include <cctype>
 #include <iostream>
 #include <limits>
+#include <locale>
 
 #include "Game.h"
 #include "Prompts.h"
@@ -87,7 +88,7 @@ int Board::checkValidCol(Position start, Position end) const {
         moveUp  = 1;
     }
     if(moveUp) {
-        for(unsigned int i = start.y+1; i <= end.y; i++){
+        for(int i = (int)start.y+1; i <= (int)end.y; i++){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
                 if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
                     return 0;
@@ -966,7 +967,7 @@ bool checkValidPos(std::string input){
     if(input.length() != 2){
         return false;
     }
-    if(input[0] < 97 || input[0] > 104){
+    if(tolower(input[0]) < 97 || input[0] > 104){
         return false;
     }
     return true;
@@ -991,9 +992,9 @@ void Board::run() {
         else{
             std::cin >> end;
             if(checkValidPos(start) && checkValidPos(end)){
-                int indXStart = start.at(0) - 97;
+                int indXStart = tolower(start.at(0)) - 97;
                 int indYStart = start.at(1) - 49;
-                int indXEnd = end.at(0) - 97;
+                int indXEnd = tolower(end.at(0)) - 97;
                 int indYEnd = end.at(1) - 49;
                 bool runRest = false;
                 int mm = makeMove(Position(indXStart,indYStart), Position (indXEnd, indYEnd));
@@ -1034,6 +1035,10 @@ void Board::run() {
                         else{
 
                             Prompts::checkMate(BLACK);
+                            Prompts::win(BLACK, m_turn);
+                            Prompts::gameOver();
+                            break;
+
                         }
 
                     }
@@ -1042,21 +1047,29 @@ void Board::run() {
                         if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK) > 0){
 
                             Prompts::check(WHITE);
+                            break;
                         }
                         else{
 
                             Prompts::checkMate(WHITE);
+                            Prompts::win(WHITE, m_turn);
+                            Prompts::gameOver();
+                            break;
                         }
 
                     }
                    else if(check == -1 && playerTurn() == WHITE){
                        if(Board::checkMovesKing(WHITE) == 0 && checkMovesOtherPieces(WHITE) == 0){
                            Prompts::staleMate();
+                           Prompts::gameOver();
+                           break;
                        }
                    }
                    else if(check == -1 && playerTurn() == BLACK){
                        if(Board::checkMovesKing(BLACK) == 0 && checkMovesOtherPieces(BLACK) == 0){
                            Prompts::staleMate();
+                           Prompts::gameOver();
+                           break;
                        }
                    }
 
@@ -1078,6 +1091,10 @@ void Board::run() {
     }
     if(start == "save"){
         Board::saveGame();
+    }
+    if(start == "forfeit"){
+        Prompts::win(Player((m_turn)%2), m_turn);
+        Prompts::gameOver();
     }
 
 }

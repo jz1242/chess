@@ -110,7 +110,7 @@ bool Board::checkMoveDia(Position start, Position end) const{
 //Valid move functions
 int Pawn::validMove(Position start, Position end,
     const Board& board) const {
-    if(board.Board::getPiece(start)->owner() == WHITE){
+    /*if(board.Board::getPiece(start)->owner() == WHITE){
         if(end.x == start.x && end.y == start.y + 2 && start.y == 1){
             if(board.Board::getPiece(end) != nullptr){
                 return 0;
@@ -170,8 +170,8 @@ int Pawn::validMove(Position start, Position end,
             }
             else{
                 return 0;
-            }
-    }
+            }*/
+
     return SUCCESS;
 }
     
@@ -268,7 +268,7 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
-        //initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
         //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
