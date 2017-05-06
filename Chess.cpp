@@ -268,10 +268,10 @@ void ChessGame::setupBoard() {
         KING_ENUM, BISHOP_ENUM, KNIGHT_ENUM, ROOK_ENUM
     };
     for (size_t i = 0; i < pieces.size(); ++i) {
-        initPiece(PAWN_ENUM, WHITE, Position(i, 1));
+        //initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
-        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
     }
 }
 
@@ -282,11 +282,15 @@ bool ChessGame::loadGame() {
     std::cin >> fileNameInput;
     std::string line;
     std::ifstream myfile(fileNameInput);
+    int bufint = 0;
     int bufnumplayer, bufnumpiece;
     if (myfile.is_open()){
         getline(myfile, line); //rid of 'chess' line
         getline(myfile, line); 
-        m_turn = (int)line[0] - '0';
+        for(int i = 0; i < line.length(); i++){
+            bufint += (line[i] - '0') * pow(10,line.length()-1-i);
+        }
+        m_turn = bufint;
         while ( getline(myfile,line) ){
             bufnumplayer = line[0] - '0';
             bufnumpiece = line[5] - '0';

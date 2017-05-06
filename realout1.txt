@@ -1,0 +1,12 @@
+1. Start a new game
+2. Load a saved game
+White turn 1:
+Black turn 2:
+Error: illegal move.
+Black turn 2:
+Black captures a piece.
+White turn 3:
+Black turn 4:
+Black captures a piece.
+White turn 5:
+Enter a file to save to:

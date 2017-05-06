@@ -1,0 +1,8 @@
+1
+a1 a6
+b8 b7
+a8 a6
+h1 h4
+h8 h4
+save
+test1

@@ -980,8 +980,10 @@ void Board::run() {
     std::cin >> start;
     bool printBoard = false;
     int check = -1;
-    while(start != "q" && start != "save" && start != "forfeit"){
-
+    while(start != "q" && start != "forfeit"){
+        if(start == "save"){
+            Board::saveGame();
+        }
         if(start == "board"){
             printBoard = !printBoard;
             if(printBoard){
@@ -1088,9 +1090,6 @@ void Board::run() {
             std::cin >> start;
 
 
-    }
-    if(start == "save"){
-        Board::saveGame();
     }
     if(start == "forfeit"){
         Prompts::win(Player((m_turn)%2), m_turn);
