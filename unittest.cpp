@@ -211,20 +211,11 @@ bool checkRookW(){
 	if(!p->validMove(start, Position(5,4), chess)){
 		std::cout << "here 2";
 		return false;
-	}/*
-	std::cout << (p->validMove(Position(6,4), start, chess));
-	if(!(p->validMove(Position(5,4), start, chess))){
-		std::cout << "here 3";
-		return false;
-	}*/
+	}
 	if(!(p->validMove(start, Position(4,2), chess))){
 		std::cout << "here 4";
 		return false;
-	}/*
-	if(!p->validMove(Position(4,2), start, chess)){
-		std::cout << "here 5";
-		return false;
-	}*/
+	}
 	return true;
 }
 

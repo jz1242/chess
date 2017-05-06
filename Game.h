@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <cmath>
 
 // The list of players
 enum Player {

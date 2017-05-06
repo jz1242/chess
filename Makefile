@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -g
+CXXFLAGS = -Wall -Wextra -pedantic -std=c++11 -g -Wno-sign-compare
 
 chess: Chess.o Board.o main.o
 	$(CXX) $(CXXFLAGS) Chess.o Board.o main.o -o chess
