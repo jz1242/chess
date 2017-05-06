@@ -110,7 +110,7 @@ bool Board::checkMoveDia(Position start, Position end) const{
 //Valid move functions
 int Pawn::validMove(Position start, Position end,
     const Board& board) const {
-    /*if(board.Board::getPiece(start)->owner() == WHITE){
+    if(board.Board::getPiece(start)->owner() == WHITE){
         if(end.x == start.x && end.y == start.y + 2 && start.y == 1){
             if(board.Board::getPiece(end) != nullptr){
                 return 0;
@@ -170,8 +170,8 @@ int Pawn::validMove(Position start, Position end,
             }
             else{
                 return 0;
-            }*/
-
+            }
+    }
     return SUCCESS;
 }
     
