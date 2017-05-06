@@ -82,11 +82,11 @@ Piece* Board::newPiece(int id, Player owner) {
 
 // Returns 1 if position movement is horizontal
 int Board::checkValidCol(Position start, Position end) const {
-    int moveUp = 0;
+    int moveToRight = 0;
     if(start.y < end.y){
-        moveUp  = 1;
+        moveToRight  = 1;
     }
-    if(moveUp) {
+    if(moveToRight) {
         for(unsigned int i = start.y+1; i <= end.y; i++){
             if(Board::getPiece(Position(start.x, i)) != nullptr){
                 if(!(i == end.y && Board::getPiece(Position(start.x, i))->owner() != playerTurn())){
@@ -109,25 +109,23 @@ int Board::checkValidCol(Position start, Position end) const {
 
 // Returns 1 if position movement is vertical
 int Board::checkValidRow(Position start, Position end) const {
-    int moveToRight = 0;
+    int moveUp = 0;
     if(start.x < end.x){
-        moveToRight = 1;
+        moveUp = 1;
     }
-    if(moveToRight) {
+    if(moveUp) {
         for(unsigned int i = start.x+1; i <= end.x; i++){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
-                    std::cout << "a";
                     return 0;
                 }
             }
         }
     }
     else {
-        for(unsigned int i = start.x + 1; i >= end.x; i--){
+        for(int i = start.x - 1; i >= end.x; i--){
             if(Board::getPiece(Position(i, start.y)) != nullptr){
                 if(!(i == end.x && Board::getPiece(Position(i, start.y))->owner() != playerTurn())){
-                    std::cout << "b";
                     return 0;
                 }
             }
@@ -251,12 +249,7 @@ void Board::printAllPieces() const{
                 Terminal::colorBg(Terminal::BLACK);
             }
             if(!(a == nullptr)){
-                if(a->owner() == BLACK){
-                    Terminal::colorFg(false, Terminal::CYAN);
-                }
-                else{
-                    Terminal::colorFg(false, Terminal::RED);
-                }
+                Terminal::colorFg(false, Terminal::CYAN);
                 std::cout<<a->id()<<" ";
             }
             else{
@@ -569,6 +562,7 @@ int Board::checkMovesOtherPieces(Player pl){
             }
         }
     }
+    std::cout<<move<<std::endl;
     return move;
 }
 int Board::checkMovesPawn(Position start){
@@ -981,7 +975,6 @@ void Board::run() {
     Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
     std::cin >> start;
     bool printBoard = false;
-    int check = -1;
     while(start != "q" && start != "save" && start != "forfeit"){
 
         if(start == "board"){
@@ -1011,48 +1004,22 @@ void Board::run() {
                 }
                 else if(mm == 3){
                     Prompts::capture(Player((m_turn+1)%2));
-                    m_turn++;
                     runRest = true;
                 }
                 else if(mm == -1){
                     Prompts::illegalMove();
                 }
-                else if(mm == -2){
-                    Prompts::cantExposeCheck();
-                }
-                int check = inCheck();
-                if(check == 1 && playerTurn() == WHITE){
-                    if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE)){
-                        Prompts::check(BLACK);
-                    }
-                    else{
-                        Prompts::checkMate(BLACK);
-                    }
-                }
-               else if(check == 2 && playerTurn() == BLACK){
-                    if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
-                        Prompts::check(WHITE);
-                    }
-                    else{
-                        Prompts::checkMate(WHITE);
-                    }
-                }
-                if(printBoard){
-                    printAllPieces();    
-=======
-                else if(mm == -3){
-                    Prompts::mustHandleCheck();
-                }
                 else{
                     runRest = true;
-
                 }
                 if(runRest){
                     m_turn++;
-                    check = inCheck();
+                    int check = inCheck();
                     if(check == 1 && playerTurn() == WHITE){
 
                         if(Board::checkMovesKing(WHITE) > 0 || checkMovesOtherPieces(WHITE) > 0){
+                           // std::cout<<Board::checkMovesKing(WHITE)<<std::endl;
+                            //std::cout<<Board::checkMovesOtherPieces(WHITE)<<std::endl;
                             Prompts::check(BLACK);
                         }
                         else{
@@ -1063,7 +1030,7 @@ void Board::run() {
                     }
                    else if(check == 2 && playerTurn() == BLACK){
 
-                        if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK) > 0){
+                        if(Board::checkMovesKing(BLACK) > 0 || checkMovesOtherPieces(BLACK)){
 
                             Prompts::check(WHITE);
                         }
@@ -1073,31 +1040,20 @@ void Board::run() {
                         }
 
                     }
-                   else if(check == -1 && playerTurn() == WHITE){
-                       if(Board::checkMovesKing(WHITE) == 0 && checkMovesOtherPieces(WHITE) == 0){
-                           Prompts::staleMate();
-                       }
-                   }
-                   else if(check == -1 && playerTurn() == BLACK){
-                       if(Board::checkMovesKing(BLACK) == 0 && checkMovesOtherPieces(BLACK) == 0){
-                           Prompts::staleMate();
-                       }
-                   }
 
-
->>>>>>> 9d30c2f78a0141d2c9d6a9a6c9877f26248cc3f6
+                    if(printBoard){
+                        printAllPieces();
+                    }
                 }
             }
             else{
                 Prompts::parseError();
             }
-            if(printBoard){
-                printAllPieces();
-            }
         }
-
             Prompts::playerPrompt(Player((m_turn+1) % 2),m_turn);
             std::cin >> start;
+
+
     }
     if(start == "save"){
         Board::saveGame();
