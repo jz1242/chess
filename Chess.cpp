@@ -271,7 +271,7 @@ void ChessGame::setupBoard() {
         initPiece(PAWN_ENUM, WHITE, Position(i, 1));
         initPiece(pieces[i], WHITE, Position(i, 0));
         initPiece(pieces[i], BLACK, Position(i, 7));
-        //initPiece(PAWN_ENUM, BLACK, Position(i, 6));
+        initPiece(PAWN_ENUM, BLACK, Position(i, 6));
     }
 }
 
