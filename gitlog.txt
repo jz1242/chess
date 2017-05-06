@@ -1,3 +1,431 @@
+commit 35c16fd9c6e9528eacd6206916f9c19c8b7833a8
+Merge: 3619946 f9b3f78
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 22:39:44 2017 -0400
+
+    Merge branch 'master' of https://github.com/jz1242/intermediate-final
+
+commit 361994621be75189a4e0574831950a8445ef2324
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 22:39:38 2017 -0400
+
+    added test 3
+
+commit f9b3f78e72d62b8254232709a2a5943801f5d731
+Merge: 81eed1c c55729d
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 22:38:06 2017 -0400
+
+    merged
+
+commit 81eed1c963a2f9f43250b41eb374186b4ac8d02e
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 22:37:36 2017 -0400
+
+    final game
+
+commit c55729d9236524fca2619fae5e55d6db95ddcbea
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 22:33:01 2017 -0400
+
+    fixed file lines and added 2 tests
+
+commit 133ba73dee6383b2835c01998302002db7d70e9c
+Merge: bc80588 db0e92e
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 21:35:38 2017 -0400
+
+     merged
+
+commit bc8058854ace5fb894369d77ad02e26d42156941
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 21:35:13 2017 -0400
+
+    Check prompts
+
+commit db0e92ea26fb7b17bfda8fa6387121ec2c4ee885
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 21:30:39 2017 -0400
+
+    finished unit testing
+
+commit 7ce68712515a2327302059d2f124ae3a4ad3525b
+Merge: db139e1 01efe9a
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 21:01:47 2017 -0400
+
+    merged
+
+commit db139e19913c2c10b28cb11e96446aeb12717e1e
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 20:59:45 2017 -0400
+
+    unittests on rook
+
+commit 01efe9ac1949b7250b8d23e0039f15da54dbccf8
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 20:59:10 2017 -0400
+
+    Queen diagonal bug fixed
+
+commit 206610a80a71bc978c2681d9e5cbb49ca5388874
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 20:49:37 2017 -0400
+
+    fixed checkvalidrow
+
+commit 1e62c9dd8885cd12d49ac2e617e6b4e1a29950cd
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 20:36:38 2017 -0400
+
+    fixed merge
+
+commit ed28adbfb3e17a47ade040281785864ef9c405c5
+Merge: 1ad2919 9d30c2f
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 20:09:20 2017 -0400
+
+    merged
+
+commit 1ad29199f3a42f03b58aabbf09c238834cfa6934
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 20:07:40 2017 -0400
+
+    working unittests for row,col,dia, pawn black and white. Woring on checking rook movement
+
+commit 9d30c2f78a0141d2c9d6a9a6c9877f26248cc3f6
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 19:54:39 2017 -0400
+
+    Checkmate, stalemate finished, checking error prompts
+
+commit a92826d3cadb405599889bba6e2dbf2e231040e6
+Merge: 32b120e 8285875
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 18:39:06 2017 -0400
+
+    Merged
+
+commit 32b120eb7a4902c67d2e33b05d710375f048ad9c
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 18:37:15 2017 -0400
+
+    extra copies
+
+commit 31f6b2d78bbbd35dd51a37270fed14e885334be0
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 18:34:23 2017 -0400
+
+    Check and Checkmate working
+
+commit 8285875798fe469704d7f908872583257799b50d
+Merge: 05bbd38 5ee85ea
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 18:17:11 2017 -0400
+
+    merged
+
+commit 05bbd38924429e1fd7a149294e4f583ca265a3cc
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 17:37:07 2017 -0400
+
+    unittests for pawn black and rook not working
+
+commit 5ee85ea5d7ce09d70a691d509626b0562b110e32
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 17:21:59 2017 -0400
+
+    fixed print error
+
+commit a4cce71cd9839336d8f63e971b06e2d9a37500f7
+Merge: e5a8264 393060d
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 17:15:28 2017 -0400
+
+    merged
+
+commit e5a82647829c0b0551cdfff996ac92cbd69a3ca7
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 17:14:21 2017 -0400
+
+    Fixed bugs, row and col work now
+
+commit 393060daf0fd328f70e90d27f5d627795e30ff31
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 14:43:53 2017 -0400
+
+    moved prompts to board.cpp
+
+commit c674e3733a4643a630ed372e5a290ff212eba1fe
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 11:43:22 2017 -0400
+
+    fixed merge
+
+commit 97ed7484d5320a79d0e476706e5035fd2ae74ed7
+Merge: 7376500 ebae63b
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 11:31:55 2017 -0400
+
+    merged
+
+commit 737650067e53efdb92a71bf646059df95709c3d7
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 11:29:33 2017 -0400
+
+    Check works, merging
+
+commit ebae63b7c3e52a21ee5691da10697c0fd7abba18
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri May 5 11:02:18 2017 -0400
+
+    hotfix added proper include
+
+commit 3c6e0b885911aaf0e331084774e7357408519b06
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 07:24:44 2017 -0400
+
+    added comments and started unittest but not sure how to do func without classes
+
+commit 528550982497773919c41460997535c915392f2d
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 06:46:23 2017 -0400
+
+    board toggles on/off, correct prompts, rid of errors by voiding unused parameters-- only thing need now is ending game
+
+commit c3bd53fd8b58ea45cd92f6244bb3646d440aba47
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 05:29:55 2017 -0400
+
+    cleaned up board and save file
+
+commit 5bf303eed0c88751e0b207690de672cf8af5b311
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 05:20:31 2017 -0400
+
+    make board pretty
+
+commit 7e25990fd6fa392406888e7d470714b4b87e016f
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri May 5 00:58:24 2017 -0400
+
+    saving game working
+
+commit 01b9f39cf20761b6df06eb990022fa9914bab58c
+Merge: b57b4f4 deec682
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Thu May 4 23:40:15 2017 -0400
+
+    Merge branch 'master' of https://github.com/jz1242/intermediate-final
+
+commit b57b4f4ba19e5536bb637ab1cf4d6420ee0ad3a1
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Thu May 4 23:40:10 2017 -0400
+
+    started save/load
+
+commit deec68247c5324282b4d73b3277da559c8543cc5
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Thu May 4 18:39:42 2017 -0400
+
+    Check, king check implemented
+
+commit b2ebee5bc58e1c66c8793b21643221019348f3e1
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Wed May 3 12:01:22 2017 -0400
+
+    added promoting
+
+commit 1a764a653e03bf2692bbc1bf8f95d3afbe9750dd
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Tue May 2 17:44:58 2017 -0400
+
+    Added logic to diagonal, row, column move. checks endpoints as well
+
+commit 8a48aaee230d505e9293ad10b10010b6d59d06fd
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Tue May 2 00:08:04 2017 -0400
+
+    Game functions, prompts when capture happens
+
+commit b778fd56d1a5a3e2182386417840dc23a4ecd66d
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Mon May 1 16:27:26 2017 -0400
+
+    Put print board in board class, fixed up col and row check, plays game in infinite loop
+
+commit cf6ade14f33df8403ab2bc38d166e4595851e9fe
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Mon May 1 14:26:08 2017 -0400
+
+    Pawn movement works for both, turns have been enabled, comment m_turn out to just test on white side
+
+commit c366d922a28ab6efca06346ed7495b89a00db1a4
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Mon May 1 12:17:02 2017 -0400
+
+    Fixed repo
+
+commit e2865cd7728a3ae2348ec91093a6736c48f81587
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Mon May 1 12:09:23 2017 -0400
+
+    Update column, row, diag moves
+
+commit 8569b16fa595199c978c48e33f25dc0002947f45
+Merge: a673945 33df620
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 11:55:27 2017 -0400
+
+    merged queen and fixed segfault
+
+commit a6739458edfb8fd9355bc1cc6070c322c5e2cb60
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 11:53:48 2017 -0400
+
+    QUEEN
+
+commit 33df62017f262ef778c24016ee5b8b9fb7fd9707
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Mon May 1 11:53:10 2017 -0400
+
+    Fixed segfault
+
+commit 0389f869d6a4f8aa681cf7bf9e3e6aeae603aafb
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 11:52:34 2017 -0400
+
+    queen
+
+commit 6c2b3807ba059b91317d2babf820541b4607c4e4
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 11:51:45 2017 -0400
+
+    queen works
+
+commit 80c97019ec76ea5babde867651d0700d9abe842d
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 11:23:17 2017 -0400
+
+    queen started, not yet working
+
+commit e0460b9b15752c926f965065e7a585175e238505
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 01:41:50 2017 -0400
+
+    case checked diagonal
+
+commit 7dc4d9380ae1a0f438bbf6a4aaec892882d5fd91
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Mon May 1 01:00:39 2017 -0400
+
+    working bishop (diagonal func)
+
+commit d4231d63370ae55fd62798e5d5194e656313cb38
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 22:03:38 2017 -0400
+
+    okay last one way a lie, this is the ACTUAL working updated rook movement
+
+commit 59ad8588721ad9166012f183405ab326cd1c2246
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 21:07:50 2017 -0400
+
+    still segfault if you try to move a piece that isn't there but otherwise rook works with new change
+
+commit c87a61ef6cb3c2505adff472855d418a421cfdc2
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 20:39:55 2017 -0400
+
+    updated with fixed rook
+
+commit 21db342ac3990051315efee2289096effdde6ad9
+Merge: a282361 f54c48d
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 20:38:58 2017 -0400
+
+    Merge branch 'master' of https://github.com/jz1242/intermediate-final
+
+commit a28236179687639ab89503afd7e55152c80fabe4
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 20:37:09 2017 -0400
+
+    new rook movement compliant with new style
+
+commit f54c48d9e01780daa13abf01307fb9e34fb78c58
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Sun Apr 30 20:36:46 2017 -0400
+
+    changed notes error
+
+commit 8d85bc4cdfafb22bba5316f04781e1cfb4f99d81
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Sun Apr 30 20:31:25 2017 -0400
+
+    Deleted checkRow method, fixed merge conflicts, added notes on how to properly index board
+
+commit 1996c70d1f86805b95e7d292dc795993475eba28
+Merge: c785cc5 4f426a6
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Sun Apr 30 20:18:11 2017 -0400
+
+    merge
+
+commit c785cc5e447c162bdbaff2058f22b9ce5288e99b
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Sun Apr 30 20:15:34 2017 -0400
+
+    Inverted indicies, fixed king knight pawn
+
+commit 4f426a681b67d8ef06a76b58a55cafda903c2402
+Merge: d43e79a 1a9d1f6
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 19:05:43 2017 -0400
+
+    merged
+
+commit d43e79afde843fae8d05179c230fd570624df82a
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 19:04:24 2017 -0400
+
+    added checkRow to see if the move is within a row and if there's a piece blocked the move
+
+commit 1a9d1f6bf84cf6831255271ab7744227f8b1697d
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Sun Apr 30 18:46:31 2017 -0400
+
+    Checks turns and errors if wrong piece chosen by player
+
+commit 91013f84223851abefba6b78f489a88db111d159
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sun Apr 30 17:57:51 2017 -0400
+
+    moved validMove for each piece into .cpp
+
+commit 75e6b5833fc6b08752086d4dfd0ee54d8a29f2ae
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sat Apr 29 00:29:06 2017 -0400
+
+    added knight movement
+
+commit 73560c43d27d79dd0b167deb9cf663c03382bec7
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Sat Apr 29 00:05:54 2017 -0400
+
+    fixed/added correct prompts:: in case of error
+
+commit fbcb1c3742efa5b6e5aac0128b6fd0aa30e98038
+Author: Kristin Yim <k.yim33@gmail.com>
+Date:   Fri Apr 28 23:20:19 2017 -0400
+
+    added king move and check for valid position on board and if its an empty position
+
+commit ccae18321c3b7fbf1be1798d554a1f96ef82eaab
+Author: Jason Zhang <jz1242@gmail.com>
+Date:   Fri Apr 28 19:32:21 2017 -0400
+
+    Pawn move logic partially implemented
+
 commit 14ac0e11633b3ed2ff0d8bfe63939e27948f0183
 Author: Jason Zhang <jz1242@gmail.com>
 Date:   Fri Apr 28 13:26:45 2017 -0400
